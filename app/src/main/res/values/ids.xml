@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="guideline3" type="id">@+id/guideline3</item>
+    <item name="guideline2" type="id">@+id/guideline2</item>
+    <item name="guideline7" type="id">@+id/guideline7</item>
+    <item name="guideline4" type="id">@+id/guideline4</item>
+    <item name="guideline6" type="id">@+id/guideline6</item>
+    <item name="guideline5" type="id">@+id/guideline5</item>
+    <item name="guideline" type="id">@+id/guideline</item>
+</resources>
