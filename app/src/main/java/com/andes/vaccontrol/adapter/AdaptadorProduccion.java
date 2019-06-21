@@ -12,7 +12,7 @@ import com.andes.vaccontrol.R;
 
 import java.util.ArrayList;
 
-public class AdaptadorGanados extends BaseAdapter {
+public class AdaptadorProduccion extends BaseAdapter {
 
     private static LayoutInflater inflater = null;
 
@@ -20,7 +20,7 @@ public class AdaptadorGanados extends BaseAdapter {
     String tipo;
     ArrayList<ArrayList<String>> datos;
 
-    public AdaptadorGanados(Context context, String tipo, ArrayList<ArrayList<String>> datos) {
+    public AdaptadorProduccion(Context context, String tipo, ArrayList<ArrayList<String>> datos) {
         this.contexto = context;
         this.tipo = tipo;
         this.datos = datos;
@@ -43,17 +43,20 @@ public class AdaptadorGanados extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        final View vista = inflater.inflate(R.layout.element_list_ganados, null);
+        final View vista = inflater.inflate(R.layout.element_list_produccion, null);
 
-        TextView titulo = (TextView) vista.findViewById(R.id.tvTitulo);
-        TextView nombre = (TextView) vista.findViewById(R.id.tvNombre);
-        TextView detalle = (TextView) vista.findViewById(R.id.tvDetalle);
-        ImageView imagen = (ImageView) vista.findViewById(R.id.tvImagen);
 
-        titulo.setText(tipo + " " + (i+1));
-        nombre.setText(""+datos.get(i).get(1));
-        detalle.setText(""+datos.get(i).get(2));
-        imagen.setImageResource(R.mipmap.vaca);
+        TextView titulo_produccion = (TextView) vista.findViewById(R.id.tv_titulo_produccion);
+        TextView litros_produccion = (TextView) vista.findViewById(R.id.tv_litros_produccion);
+        TextView solidos_produccion = (TextView) vista.findViewById(R.id.tv_solidos_produccion);
+        TextView fecha_produccion = (TextView) vista.findViewById(R.id.tv_fecha_produccion);
+        TextView peso_produccion = (TextView) vista.findViewById(R.id.tv_peso_produccion);
+
+        titulo_produccion.setText(tipo + " " + (datos.size()-i));
+        litros_produccion.setText(""+datos.get(i).get(1));
+        solidos_produccion.setText(""+datos.get(i).get(2));
+        fecha_produccion.setText(""+datos.get(i).get(4));
+        peso_produccion.setText(""+datos.get(i).get(5));
 
         return vista;
     }
