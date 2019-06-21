@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.andes.vaccontrol.SessionManager;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -31,6 +31,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.security.AccessController;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -48,17 +49,29 @@ public class HomeActivity extends AppCompatActivity {
 
 
     // EXTRAEMOS DATOS DE ANDROID INTENT QUE NOS TRAE DATOS DEL USUARIO
-    String sesion = "iniciado";
-    String usuario = "johnkevinbarrera@gmail.com";
-    //String usuario = "kevin-tk@hotmail.com";
-    String nombres = "John Kevin";
-    String apellidos =  "Barrera Contreras";
+    String sesion = "";
+    String usuario;
+    String nombres;
+    String apellidos;
 
     ArrayList<ArrayList<String>> lista_de_establos;
+    private AccessController view;
+
+    SessionManager sessionManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        sessionManager = new SessionManager(this);
+        sessionManager.checkLogin();
+        HashMap<String,String> user = sessionManager.getUserDetail();
+        usuario = user.get(sessionManager.EMAIL);
+        sesion = "iniciado";
+        nombres = user.get(sessionManager.NAME);
+        apellidos = user.get(sessionManager.LASTNAME);;
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -66,10 +79,7 @@ public class HomeActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //        .setAction("Action", null).show();
                 Intent mi_nuevo_establo = new Intent(view.getContext(), CrearEstabloActivity.class);
-                //Intent mi_usuario = new Intent(view.getContext(), CrearGanadoActivity.class);
                 mi_nuevo_establo.putExtra("usuario_ganadero",usuario);
                 mi_nuevo_establo.putExtra("session",sesion);
                 startActivity(mi_nuevo_establo);
@@ -85,20 +95,13 @@ public class HomeActivity extends AppCompatActivity {
         lista = (ListView) findViewById(R.id.lista_establos);
 
 
-
         tvnombre.setText(nombres +" "+apellidos);
         tvemail.setText(usuario);
-
-       // CARGAMOS Y VISUALIZAMOS DATOS DEL GANADERO
-        /*
-        lista_de_establos = new ArrayList<ArrayList<String>>();
-        lista.setAdapter(new AdaptadorEstablos(HomeActivity.this, "Establo", lista_de_establos));
-        LeerGanadero(usuario,sesion);*/
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Intent mi_establo = new Intent(view.getContext(), GanadosActivity.class);
+                Intent mi_establo = new Intent(view.getContext(), EstabloActivity.class);
                 mi_establo.putExtra("establo_id",lista_de_establos.get(position).get(0));
                 mi_establo.putExtra("nombre",lista_de_establos.get(position).get(1));
                 mi_establo.putExtra("detalle",lista_de_establos.get(position).get(2));
@@ -115,7 +118,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
     }
 
@@ -133,14 +136,13 @@ public class HomeActivity extends AppCompatActivity {
             lista_de_establos = new ArrayList<ArrayList<String>>();
             lista.setAdapter(new AdaptadorEstablos(HomeActivity.this, "Establo", lista_de_establos));
             LeerGanadero(usuario,sesion);
-
-
-            //LeerEstablos();
             return true;
         }
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_logout) {
+            Toast.makeText(HomeActivity.this,"Cerrando Sesión!", Toast.LENGTH_SHORT).show();
+            sessionManager.logout();
             return true;
         }
 
@@ -167,7 +169,9 @@ public class HomeActivity extends AppCompatActivity {
                                     Toast.makeText(HomeActivity.this,"No registras ningun Establo!", Toast.LENGTH_SHORT).show();
                                 } else {
                                     lista_vacia.setVisibility(View.GONE);
-                                    Toast.makeText(HomeActivity.this,""+message.length(), Toast.LENGTH_SHORT).show();
+
+                                    //Toast.makeText(HomeActivity.this,""+message.length(), Toast.LENGTH_SHORT).show();
+
                                     for (int i = 0; i < message.length(); i++) {
                                         String establo_id = message.getJSONObject(i).getString("establo_id");
                                         String nombre = message.getJSONObject(i).getString("nombre");
@@ -278,11 +282,26 @@ public class HomeActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-
     @Override protected void onResume() {
         super.onResume();
-        lista_de_establos = new ArrayList<ArrayList<String>>();
-        lista.setAdapter(new AdaptadorEstablos(HomeActivity.this, "Establo", lista_de_establos));
-        LeerGanadero(usuario,sesion);
+
+        // CARGAMOS Y VISUALIZAMOS DATOS DEL GANADERO
+        if (sesion == "iniciado"){
+            lista_de_establos = new ArrayList<ArrayList<String>>();
+            lista.setAdapter(new AdaptadorEstablos(HomeActivity.this, "Establo", lista_de_establos));
+            LeerGanadero(usuario,sesion);
+        }
     }
+
+
+    public boolean internetIsConnected() {
+        try {
+            String command = "ping -c 1 google.com";
+            return (Runtime.getRuntime().exec(command).waitFor() == 0);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 }
+

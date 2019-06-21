@@ -1,10 +1,6 @@
 <resources>
-    <string name="app_name">AppVacas</string>
+    <string name="app_name">VacControl</string>
     <string name="action_settings">Settings</string>
-
-
-
-
 
 
     <string-array name="array_paises">
@@ -13,8 +9,28 @@
 
     <string-array name="array_regiones">
         <item>Amazonas</item>
-        <item>Junin</item>
+        <item>Áncash</item>
+        <item>Apurímac</item>
+        <item>Arequipa</item>
+        <item>Ayacucho</item>
+        <item>Cajamarca</item>
+        <item>Cusco</item>
+        <item>Huancavelica</item>
+        <item>Huánuco</item>
+        <item>Ica</item>
+        <item>Junín</item>
+        <item>La Libertad</item>
+        <item>Lambayeque</item>
         <item>Lima</item>
+        <item>Loreto</item>
+        <item>Madre de Dios</item>
+        <item>Moquegua</item>
+        <item>Pasco</item>
+        <item>Piura</item>
+        <item>Puno</item>
+        <item>San Martín</item>
+        <item>Tacna</item>
+        <item>Tumbes</item>
         <item>Ucayali</item>
     </string-array>
 
@@ -23,12 +39,25 @@
         <item>Holstein</item>
     </string-array>
 
+    <string-array name="array_estado_vacas">
+        <item>Preñada</item>
+        <item>Vacía</item>
+        <item>Seca</item>
+    </string-array>
+
+    <string-array name="array_estado_en_produccion">
+        <item>No</item>
+        <item>Si</item>
+    </string-array>
+
+
     <string-array name="array_g_procedencias">
         <item>Mismo Establo</item>
         <item>Feria</item>
         <item>Centro de Invetigación</item>
         <item>Exportada</item>
     </string-array>
+    <string name="title_activity_registrar_fotosctivity">RegistrarFotosctivity</string>
 
 
 </resources>

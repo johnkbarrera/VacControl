@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_refresh_vaca"
+        android:orderInCategory="100"
+        android:title="Refrescar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_gd_atras"
+        android:orderInCategory="100"
+        android:title="Atrás"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_saca"
+        android:orderInCategory="100"
+        android:title="Saca (eliminar)"
+        app:showAsAction="never" />
+</menu>

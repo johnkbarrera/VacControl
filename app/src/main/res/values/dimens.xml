@@ -27,7 +27,6 @@
     <dimen name="padding_xxxxxlarge">55dip</dimen>
 
 
-
     <dimen name="reverse_margin_small">-15dp</dimen>
     <dimen name="reverse_margin">-40dp</dimen>
     <dimen name="margin_xsmall">3dip</dimen>

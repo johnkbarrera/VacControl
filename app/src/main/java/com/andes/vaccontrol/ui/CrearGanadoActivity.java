@@ -41,7 +41,7 @@ import org.json.JSONObject;
 
 public class CrearGanadoActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "CrearGanadoActivity";
 
     private DatePickerDialog.OnDateSetListener mDateSetListener;
 
@@ -211,6 +211,11 @@ public class CrearGanadoActivity extends AppCompatActivity {
         ganado_rgp = et_rgp.getText().toString();
         ganado_v_madre = et_v_madre.getText().toString();
         ganado_v_padre = et_v_padre.getText().toString();
+
+        if (ganado_rgm.isEmpty()){ganado_rgm = "No Registrado";}
+        if (ganado_rgp.isEmpty()){ganado_rgp = "No Registrado";}
+        if (ganado_v_madre.isEmpty()){ganado_v_madre = "No Registrado";}
+        if (ganado_v_padre.isEmpty()){ganado_v_padre = "No Registrado";}
 
         if (ganado_nombre.isEmpty()){
             estado = false;

@@ -11,11 +11,15 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_home"
+        android:icon="@mipmap/icono_app"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -32,9 +36,12 @@
             </intent-filter>
         </activity>
         <activity android:name="com.andes.vaccontrol.ui.CrearEstabloActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.GanadosActivity" />
+        <activity android:name="com.andes.vaccontrol.ui.EstabloActivity" />
         <activity android:name="com.andes.vaccontrol.ui.CrearGanadoActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.MiGanadoActivity" />
+        <activity android:name="com.andes.vaccontrol.ui.GanadoActivity" />
+        <activity android:name="com.andes.vaccontrol.ui.RegistrarFotosActivity" />
+        <activity android:name="com.andes.vaccontrol.ui.LoginActivity" />
+        <activity android:name="com.andes.vaccontrol.ui.RegisterActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

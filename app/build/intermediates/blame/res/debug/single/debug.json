@@ -52,12 +52,12 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png"
     },
     {
-        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_mr_button_disconnected_light.png.flat",
-        "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-hdpi-v4\\ic_mr_button_disconnected_light.png"
-    },
-    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_disabled_light.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xxhdpi-v4\\ic_mr_button_disabled_light.png"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_mr_button_disconnected_light.png.flat",
+        "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-hdpi-v4\\ic_mr_button_disconnected_light.png"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -228,6 +228,10 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_30_light.png"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ganado.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\activity_ganado.xml"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2b90679471d462b8a096ce9bfb06eef2\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
     },
@@ -322,10 +326,6 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_28_light.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_28_light.png"
-    },
-    {
-        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_mi_ganado.xml.flat",
-        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\activity_mi_ganado.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
@@ -528,16 +528,16 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_registrar_reproduccion.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\dialog_registrar_reproduccion.xml"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_group_expand.xml.flat",
@@ -928,6 +928,10 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_element_list_produccion.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\element_list_produccion.xml"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_17_dark.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_17_dark.png"
     },
@@ -970,6 +974,10 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_regitrar_fotos.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\activity_regitrar_fotos.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1060,6 +1068,10 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2b90679471d462b8a096ce9bfb06eef2\\res\\drawable-xhdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icono_app.jpg.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\mipmap-xxhdpi\\icono_app.jpg"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\color\\abc_secondary_text_material_dark.xml"
     },
@@ -1140,12 +1152,12 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\5220442b3accc22ab06462dfe2ba5191\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\5220442b3accc22ab06462dfe2ba5191\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1282,6 +1294,10 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\f0e5633cec639f4a2e47ef43cfb8ba88\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_litros.jpg.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\mipmap-xhdpi\\litros.jpg"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1702,10 +1718,6 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ganados.xml.flat",
-        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\activity_ganados.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_mr_button_disabled_dark.png.flat",
@@ -2416,6 +2428,10 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xxxhdpi-v4\\ic_group_expand_00.png"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_registrar_produccion.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\dialog_registrar_produccion.xml"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_cast_group_item.xml.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\layout\\mr_cast_group_item.xml"
     },
@@ -2434,6 +2450,10 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_establo.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\activity_establo.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
@@ -2648,6 +2668,10 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_17_light.png"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_saca_ganado.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\dialog_saca_ganado.xml"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2b90679471d462b8a096ce9bfb06eef2\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
     },
@@ -2836,6 +2860,10 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_ganado.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\menu\\menu_ganado.xml"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\5220442b3accc22ab06462dfe2ba5191\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
@@ -2946,6 +2974,14 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_09_light.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_09_light.png"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_establo.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\menu\\menu_establo.xml"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_home.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\menu\\menu_home.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_vol_type_audiotrack_dark.xml.flat",
@@ -3220,10 +3256,6 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_vacas.xml.flat",
-        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\menu\\menu_vacas.xml"
-    },
-    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\layout\\abc_alert_dialog_material.xml"
     },
@@ -3362,6 +3394,10 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_vol_type_speaker_group_dark.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_confirm_email.xml.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\layout\\confirm_email.xml"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_01_light.png.flat",
