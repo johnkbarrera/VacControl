@@ -60,12 +60,14 @@ public class GanadoActivity extends AppCompatActivity {
     TextView ganado_title, ganado_nom, ganado_registro, ganado_raza, ganado_procedencia;
     TextView ganado_dob, ganado_peso_dob, ganado_rpm, ganado_vmadre, ganado_rpg, ganado_vpadre;
 
-    TextView ganado_c_somaticas, ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo;
+    TextView ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo, ganado_fecha_monitoreo_2;
+
+    // TextView ganado_c_somaticas, ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo;
 
     TextView ganado_reproduccion, ganado_estado_actual, ganado_peso_actual, ganado_fecha_celo;
 
-    ImageButton fab_detalle,fab_monitoreo,fab_reproduccion;
-    LinearLayout lay_detalle,lay_monitoreo,lay_reproduccion;
+    ImageButton fab_detalle, fab_estado_nutricional,fab_reproduccion, fab_potencial_genetico;
+    LinearLayout lay_detalle, lay_estado_nutricional,lay_reproduccion, lay_potencial_genetico;
 
     private FloatingActionButton fab_main, fab1_mail, fab2_share, fab3_share;
     private Animation fab_open, fab_close, fab_clock, fab_anticlock;
@@ -73,7 +75,8 @@ public class GanadoActivity extends AppCompatActivity {
 
     Boolean isOpen = false;
     Boolean isOpenDetalle = true;
-    Boolean isOpenMonitoreo = true;
+    Boolean isOpenEstadoNutricional = true;
+    Boolean isOpenPotencialGenetico = true;
     Boolean isOpenReproduccion = true;
 
     /* LAYOUt REPRODUCCION*/
@@ -81,7 +84,7 @@ public class GanadoActivity extends AppCompatActivity {
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     private static String URL_ADD_ESTADO_REPRODUCCION = AppServices.URL_ADD_ESTADO_REPRODUCCION;
 
-    int ganado_estadovaca_pos, ganado_estado_pos;
+    int ganado_estadovaca_pos, ganado_estado_pos,hora_produccion_pos;
 
     private static String URL_ADD_PRODUCCION = AppServices.URL_ADD_PRODUCCION;
 
@@ -126,10 +129,10 @@ public class GanadoActivity extends AppCompatActivity {
         ganado_rpg = findViewById(R.id.tv_gd_rgp);
         ganado_vpadre = findViewById(R.id.tv_gd_vpadre);
 
-        ganado_c_somaticas = findViewById(R.id.tv_gd_csomatica);
         ganado_prof_ubre = findViewById(R.id.tv_gd_profubre);
         ganado_prof_corporal = findViewById(R.id.tv_gd_profcorp);
         ganado_fecha_monitoreo = findViewById(R.id.tv_gd_monitoreo_fecha);
+        ganado_fecha_monitoreo_2 = findViewById(R.id.tv_gd_monitoreo_fecha_2);
 
         ganado_reproduccion = findViewById(R.id.tv_gd_preñada);
         ganado_estado_actual = findViewById(R.id.tv_gd_estado_vaca);
@@ -188,24 +191,45 @@ public class GanadoActivity extends AppCompatActivity {
             }
         });
 
-        fab_monitoreo = findViewById(R.id.fab_monitoreo_ganado);
-        lay_monitoreo = findViewById(R.id.lay_monitoreo_ganado);
+        fab_estado_nutricional = findViewById(R.id.fab_estado_nutricional_ganado);
+        lay_estado_nutricional = findViewById(R.id.lay_estado_nutricional_ganado);
 
-        fab_monitoreo.setOnClickListener(new View.OnClickListener() {
+        fab_estado_nutricional.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!isOpenMonitoreo) {
-                    lay_monitoreo.setVisibility(View.VISIBLE);
+                if (!isOpenEstadoNutricional) {
+                    lay_estado_nutricional.setVisibility(View.VISIBLE);
                     //lay_detalle.startAnimation(fab_open);
                     //fab_detalle.startAnimation(fab_anticlock);
-                    fab_monitoreo.setRotation(0);
-                    isOpenMonitoreo = true;
+                    fab_estado_nutricional.setRotation(0);
+                    isOpenEstadoNutricional = true;
                 } else {
-                    lay_monitoreo.setVisibility(View.GONE);
+                    lay_estado_nutricional.setVisibility(View.GONE);
                     //lay_detalle.startAnimation(fab_close);
                     //fab_detalle.startAnimation(fab_clock);
-                    fab_monitoreo.setRotation(180);
-                    isOpenMonitoreo = false;
+                    fab_estado_nutricional.setRotation(180);
+                    isOpenEstadoNutricional = false;
+                }
+            }
+        });
+
+        fab_potencial_genetico = findViewById(R.id.fab_potencial_genetico_ganado);
+        lay_potencial_genetico = findViewById(R.id.lay_potencial_genetico_ganado);
+        fab_potencial_genetico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!isOpenPotencialGenetico) {
+                    lay_potencial_genetico.setVisibility(View.VISIBLE);
+                    //lay_detalle.startAnimation(fab_open);
+                    //fab_detalle.startAnimation(fab_anticlock);
+                    fab_potencial_genetico.setRotation(0);
+                    isOpenPotencialGenetico = true;
+                } else {
+                    lay_potencial_genetico.setVisibility(View.GONE);
+                    //lay_detalle.startAnimation(fab_close);
+                    //fab_detalle.startAnimation(fab_clock);
+                    fab_potencial_genetico.setRotation(180);
+                    isOpenPotencialGenetico = false;
                 }
             }
         });
@@ -367,18 +391,15 @@ public class GanadoActivity extends AppCompatActivity {
                                 JSONArray message = jsonObject.getJSONArray("message");
 
                                 if (message.length()==0){}
-                                else {
-                                    String celuas_somaticas = message.getJSONObject(0).getString("c_somaticas");
-                                    String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
+                                else {                                    String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
                                     String corp_prof = message.getJSONObject(0).getString("prof_corp");
                                     String fecha_examen = message.getJSONObject(0).getString("fecha");
 
-                                    //if (ceulas_somaticas.isEmpty()){}
 
-                                    ganado_c_somaticas.setText(celuas_somaticas);
                                     ganado_prof_ubre.setText(ubre_prof);
                                     ganado_prof_corporal.setText(corp_prof);
                                     ganado_fecha_monitoreo.setText(fecha_examen);
+                                    ganado_fecha_monitoreo_2.setText(fecha_examen);
                                 }
                             }
                             if (success.equals("0")){
@@ -628,21 +649,26 @@ public class GanadoActivity extends AppCompatActivity {
                                         String produccion_id = message.getJSONObject(i).getString("produccion_id");
                                         String litro_en_prod = message.getJSONObject(i).getString("litros_leche");
                                         String solidos_en_prod = message.getJSONObject(i).getString("solidos");
+                                        String csomaticas_en_prod = message.getJSONObject(i).getString("c_somaticas");
                                         String estado_en_prod = message.getJSONObject(i).getString("estado_prod");
                                         String fecha_de_prod = message.getJSONObject(i).getString("fecha");
-                                        String peso_en_prod = message.getJSONObject(i).getString("peso");
+                                        String hora_en_prod = message.getJSONObject(i).getString("hora");
+
+                                        if (solidos_en_prod.equals("-1")) {solidos_en_prod = "No Registra";}
+                                        if (csomaticas_en_prod.equals("-1")) {csomaticas_en_prod = "No Registra";}
 
                                         ArrayList<String> ar = new ArrayList<String>();
                                         ar.add(produccion_id);
                                         ar.add(litro_en_prod);
                                         ar.add(solidos_en_prod);
+                                        ar.add(csomaticas_en_prod);
                                         ar.add(estado_en_prod);
                                         ar.add(fecha_de_prod);
-                                        ar.add(peso_en_prod);
+                                        ar.add(hora_en_prod);
                                         lista_de_produccion.add(ar);
                                     }
 
-                                    producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Extracción", lista_de_produccion));
+                                    producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Ordeño", lista_de_produccion));
 
                                 }
                             }
@@ -879,16 +905,19 @@ public class GanadoActivity extends AppCompatActivity {
         View mView = getLayoutInflater().inflate(R.layout.dialog_registrar_produccion, null);
 
 
-        final EditText et_litros = (EditText) mView.findViewById(R.id.input_gpr_litros);
-        final EditText et_peso = (EditText) mView.findViewById(R.id.input_gpr_peso);
-        final ImageView btn_get_fechaproducion = (ImageView) mView.findViewById(R.id.btn_grp_date);
+        final ArrayAdapter<String> adapter_produccion_hora;
+
         final EditText et_fecha = (EditText) mView.findViewById(R.id.input_gpr_fecha);
+        final ImageView btn_get_fechaproducion = (ImageView) mView.findViewById(R.id.btn_grp_date);
+        final Spinner spn_hora_produccion = (Spinner) mView.findViewById(R.id.spinner_gpr_hora);
+        final EditText et_litros = (EditText) mView.findViewById(R.id.input_gpr_litros);
+        final EditText et_solidos = (EditText) mView.findViewById(R.id.input_gpr_solidos);
+        final EditText et_c_somaticas = (EditText) mView.findViewById(R.id.input_gpr_csomaticas);
         final Button btn_add_produccion = (Button) mView.findViewById(R.id.btn_confirm_produccion);
 
         mBuilder.setView(mView);
         final AlertDialog dialog = mBuilder.create();
         dialog.show();
-
 
 
         btn_get_fechaproducion.setOnClickListener(new View.OnClickListener() {
@@ -920,17 +949,36 @@ public class GanadoActivity extends AppCompatActivity {
             }
         };
 
+        adapter_produccion_hora = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.array_produccion_horas));
+        spn_hora_produccion.setAdapter(adapter_produccion_hora);
+        spn_hora_produccion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                hora_produccion_pos = position;
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                hora_produccion_pos = 0;
+            }
+        });
+
+
         btn_add_produccion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Confirmar codigo
-                if (verificar_campos_produccion(et_fecha,et_peso, et_litros)){
+                if (verificar_campos_produccion(et_fecha, et_litros)){
 
                     final String gpr_fecha_prod = et_fecha.getText().toString().trim();
-                    final String gpr_peso = et_peso.getText().toString().trim();
+                    final String gpr_hora_prod = adapter_produccion_hora.getItem(hora_produccion_pos).trim();
                     final String gpr_litro = et_litros.getText().toString().trim();
+                    String gpr_solidos = et_solidos.getText().toString().trim();
+                    String gpr_c_somaticas = et_c_somaticas.getText().toString().trim();
 
-                    add_estado_produccion(sesion, ganado_id, gpr_litro, gpr_peso, gpr_fecha_prod, dialog);
+                    if (gpr_solidos.isEmpty()){gpr_solidos = "-1";}
+                    if (gpr_c_somaticas.isEmpty()){gpr_c_somaticas = "-1";}
+
+                    add_estado_produccion(sesion, ganado_id, gpr_fecha_prod, gpr_hora_prod, gpr_litro, gpr_solidos, gpr_c_somaticas , dialog);
                 } else {
                     Toast.makeText( GanadoActivity.this, "Complete los campos requeridos!", Toast.LENGTH_SHORT).show();
                 }
@@ -938,13 +986,12 @@ public class GanadoActivity extends AppCompatActivity {
         });
     }
 
-    private boolean verificar_campos_produccion(TextView fecha, EditText peso, EditText litros){
+    private boolean verificar_campos_produccion(TextView fecha, EditText litros){
 
         boolean estado = true;
         int errorColor = ContextCompat.getColor(getApplicationContext(), R.color.colorAccent);
 
         String fecha_txt = fecha.getText().toString();
-        String peso_txt = peso.getText().toString();
         String litros_txt = litros.getText().toString();
 
         if (fecha_txt.isEmpty()){
@@ -955,14 +1002,6 @@ public class GanadoActivity extends AppCompatActivity {
             spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
             fecha.setError(spannableStringBuilder);
 
-        }
-        if (peso_txt.isEmpty()){
-            estado = false;
-            String errorString = "Ingrese el peso";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            peso.setError(spannableStringBuilder);
         }
         if (litros_txt.isEmpty()){
             estado = false;
@@ -976,13 +1015,15 @@ public class GanadoActivity extends AppCompatActivity {
         return estado;
     }
 
-    private void add_estado_produccion(String sesion_est, String ganado_id, String litros_prod, String peso_prod, String fecha_prod, AlertDialog dialogx){
+    private void add_estado_produccion(String sesion_est, String ganado_id, String fecha_prod, String hora_prod, String litros_prod, String solidos_prod, String somaticas_prod, AlertDialog dialogx){
 
         final String sesion = sesion_est.trim();
         final String ganado_identificador = ganado_id.trim();
-        final String produccion_litros = litros_prod.trim();
-        final String produccion_peso = peso_prod.trim();
         final String produccion_fecha = fecha_prod.trim();
+        final String produccion_hora = hora_prod.trim();
+        final String produccion_litros = litros_prod.trim();
+        final String produccion_solidos = solidos_prod.trim();
+        final String produccion_c_somaticas = somaticas_prod.trim();
 
         final AlertDialog dialog = dialogx;
 
@@ -998,7 +1039,6 @@ public class GanadoActivity extends AppCompatActivity {
                                 String message = jsonObject.getString("message");
                                 Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
                                 dialog.cancel();
-
 
                                 lista_de_produccion = new ArrayList<ArrayList<String>>();
                                 producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Establo", lista_de_produccion));
@@ -1026,9 +1066,11 @@ public class GanadoActivity extends AppCompatActivity {
                 Map<String,String> params = new HashMap<>();
                 params.put("sesion",sesion);
                 params.put("ganado_id",ganado_identificador);
-                params.put("gpr_litros",produccion_litros);
                 params.put("gpr_fecha",produccion_fecha);
-                params.put("gpr_peso",produccion_peso);
+                params.put("gpr_hora",produccion_hora);
+                params.put("gpr_litros",produccion_litros);
+                params.put("gpr_solidos",produccion_solidos);
+                params.put("gpr_c_somaticas",produccion_c_somaticas);
 
                 return params;
             }

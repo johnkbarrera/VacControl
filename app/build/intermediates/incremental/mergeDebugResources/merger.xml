@@ -3701,12 +3701,11 @@
         <item>Ucayali</item>
     </string-array><string-array name="array_razas">
         <item>Brown Swiss</item>
-        <item>Holstein</item>
     </string-array><string-array name="array_g_procedencias">
         <item>Mismo Establo</item>
         <item>Feria</item>
         <item>Centro de Invetigación</item>
-        <item>Exportada</item>
+        <item>Importada</item>
     </string-array><string name="title_activity_registrar_fotosctivity">RegistrarFotosctivity</string><string-array name="array_estado_en_produccion">
         <item>No</item>
         <item>Si</item>
@@ -3714,6 +3713,11 @@
         <item>Preñada</item>
         <item>Vacía</item>
         <item>Seca</item>
+    </string-array><string-array name="array_produccion_horas">
+        <item>12:00 AM - 6:00 AM</item>
+        <item>6:00 AM - 12:00 PM</item>
+        <item>12:00 PM - 6:00 PM</item>
+        <item>6:00 PM - 12:00 AM</item>
     </string-array></file><file path="C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>

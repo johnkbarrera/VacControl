@@ -48,15 +48,19 @@ public class AdaptadorProduccion extends BaseAdapter {
 
         TextView titulo_produccion = (TextView) vista.findViewById(R.id.tv_titulo_produccion);
         TextView litros_produccion = (TextView) vista.findViewById(R.id.tv_litros_produccion);
-        TextView solidos_produccion = (TextView) vista.findViewById(R.id.tv_solidos_produccion);
+        TextView estado_produccion = (TextView) vista.findViewById(R.id.tv_estado_produccion);
         TextView fecha_produccion = (TextView) vista.findViewById(R.id.tv_fecha_produccion);
-        TextView peso_produccion = (TextView) vista.findViewById(R.id.tv_peso_produccion);
+        TextView hora_produccion = (TextView) vista.findViewById(R.id.tv_hora_produccion);
+        TextView solidos_produccion = (TextView) vista.findViewById(R.id.tv_solidos_produccion);
+        TextView csomaticas_produccion = (TextView) vista.findViewById(R.id.tv_csomaticas_produccion);
 
         titulo_produccion.setText(tipo + " " + (datos.size()-i));
         litros_produccion.setText(""+datos.get(i).get(1));
+        estado_produccion.setText(""+datos.get(i).get(4));
+        fecha_produccion.setText(""+datos.get(i).get(5));
+        hora_produccion.setText(""+datos.get(i).get(6));
         solidos_produccion.setText(""+datos.get(i).get(2));
-        fecha_produccion.setText(""+datos.get(i).get(4));
-        peso_produccion.setText(""+datos.get(i).get(5));
+        csomaticas_produccion.setText(""+datos.get(i).get(3));
 
         return vista;
     }

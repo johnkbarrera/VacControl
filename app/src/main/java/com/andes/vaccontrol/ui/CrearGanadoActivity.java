@@ -212,6 +212,7 @@ public class CrearGanadoActivity extends AppCompatActivity {
         ganado_v_madre = et_v_madre.getText().toString();
         ganado_v_padre = et_v_padre.getText().toString();
 
+        if (ganado_registro.isEmpty()){ganado_registro = "";}
         if (ganado_rgm.isEmpty()){ganado_rgm = "No Registrado";}
         if (ganado_rgp.isEmpty()){ganado_rgp = "No Registrado";}
         if (ganado_v_madre.isEmpty()){ganado_v_madre = "No Registrado";}
@@ -234,22 +235,6 @@ public class CrearGanadoActivity extends AppCompatActivity {
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
             spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
             et_nombre.setError(spannableStringBuilder);
-        }
-
-        if (ganado_registro.isEmpty()){
-            estado = false;
-            String errorString = "El ganado necesita tener un registro";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            et_registro.setError(spannableStringBuilder);
-        } else if(ganado_registro.length()>20){
-            estado = false;
-            String errorString = "El registro no debe exceder los 20 caracteres";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            et_registro.setError(spannableStringBuilder);
         }
 
         if (ganado_dob.isEmpty()){
@@ -278,7 +263,7 @@ public class CrearGanadoActivity extends AppCompatActivity {
         final String establo_identificador = id_establo.trim();
         final String estado = sesion.trim();
         final String ganado_nombre = et_nombre.getText().toString().trim();
-        final String ganado_registro = et_registro.getText().toString().trim();
+        final String ganado_registro_o = ganado_registro.trim();
         final String ganado_raza = adapter_raza.getItem(ganado_raza_pos).trim();
         final String ganado_procedencia = adapter_procedencias.getItem(ganado_procedencia_pos).trim();
         final String ganado_dob = et_fecha.getText().toString().trim();
@@ -323,7 +308,7 @@ public class CrearGanadoActivity extends AppCompatActivity {
                 params.put("establo_id",establo_identificador);
                 params.put("sesion",estado);
                 params.put("nombre",ganado_nombre);
-                params.put("registro",ganado_registro);
+                params.put("registro",ganado_registro_o);
                 params.put("raza",ganado_raza);
                 params.put("procedencia",ganado_procedencia);
                 params.put("dob",ganado_dob);

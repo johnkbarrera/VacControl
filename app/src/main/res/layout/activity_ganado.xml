@@ -354,14 +354,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
                             android:freezesText="true"
-                            android:text="Datos del Monitoreo"
+                            android:text="Estado Nutricional"
                             android:textAlignment="center"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="18dp" />
 
                         <ImageButton
-                            android:id="@+id/fab_monitoreo_ganado"
+                            android:id="@+id/fab_estado_nutricional_ganado"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="15dp"
@@ -378,7 +378,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/lay_monitoreo_ganado"
+                    android:id="@+id/lay_estado_nutricional_ganado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -391,17 +391,93 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:text="N° células somáticas:  "
+                            android:layout_weight="1"
+                            android:text="Condición Corporal:  "
                             android:textAlignment="textEnd" />
 
                         <TextView
-                            android:id="@+id/tv_gd_csomatica"
+                            android:id="@+id/tv_gd_profcorp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:layout_weight="1"
                             android:text="0" />
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fecha de exámen:  "
+                            android:textAlignment="textEnd" />
+
+                        <TextView
+                            android:id="@+id/tv_gd_monitoreo_fecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:text=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:freezesText="true"
+                            android:text="Potencial Genético"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                        <ImageButton
+                            android:id="@+id/fab_potencial_genetico_ganado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorPrimary"
+                            app:srcCompat="@android:drawable/arrow_down_float" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_potencial_genetico_ganado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -432,31 +508,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Profundidad Corporal:  "
-                            android:textAlignment="textEnd" />
-
-                        <TextView
-                            android:id="@+id/tv_gd_profcorp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="0" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="Fecha de exámen:  "
                             android:textAlignment="textEnd" />
 
                         <TextView
-                            android:id="@+id/tv_gd_monitoreo_fecha"
+                            android:id="@+id/tv_gd_monitoreo_fecha_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
