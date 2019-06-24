@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="Refrescar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_atras"
+        android:orderInCategory="100"
+        android:title="Atrás"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ganados_eliminado"
+        android:orderInCategory="100"
+        android:title="Ganados Retirados"
+        app:showAsAction="never" />
+</menu>
