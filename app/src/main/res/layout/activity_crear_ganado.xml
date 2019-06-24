@@ -367,7 +367,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="8"
-                            android:text="Registro genealogico de la madre" />
+                            android:text="Registro genealógico de la madre" />
 
                         <LinearLayout
                             android:layout_width="300dp"
@@ -415,7 +415,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="6"
-                            android:text="Registro genealogico del padre" />
+                            android:text="Registro genealógico del padre" />
 
                         <LinearLayout
                             android:layout_width="300dp"

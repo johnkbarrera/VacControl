@@ -27,8 +27,10 @@
         </activity>
         <activity android:name=".ui.CrearEstabloActivity" />
         <activity android:name=".ui.EstabloActivity" />
+        <activity android:name=".ui.EstabloRetiradosActivity" />
         <activity android:name=".ui.CrearGanadoActivity" />
         <activity android:name=".ui.GanadoActivity" />
+        <activity android:name=".ui.GanadoRetiradoActivity" />
         <activity android:name=".ui.RegistrarFotosActivity" />
 
         <activity android:name=".ui.LoginActivity" />

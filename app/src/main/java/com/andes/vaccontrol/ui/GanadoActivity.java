@@ -62,8 +62,6 @@ public class GanadoActivity extends AppCompatActivity {
 
     TextView ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo, ganado_fecha_monitoreo_2;
 
-    // TextView ganado_c_somaticas, ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo;
-
     TextView ganado_reproduccion, ganado_estado_actual, ganado_peso_actual, ganado_fecha_celo;
 
     ImageButton fab_detalle, fab_estado_nutricional,fab_reproduccion, fab_potencial_genetico;
@@ -375,6 +373,130 @@ public class GanadoActivity extends AppCompatActivity {
         LeerProduccionGanado(ganado_id,sesion);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_ganado, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_refresh_vaca) {
+            Toast.makeText(GanadoActivity.this,"Refrescando Vista!", Toast.LENGTH_SHORT).show();
+            lista_de_produccion = new ArrayList<ArrayList<String>>();
+            producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Establo", lista_de_produccion));
+            LeerProduccionGanado(ganado_id,sesion);
+            return true;
+        }
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_gd_atras) {
+
+            Toast.makeText(GanadoActivity.this,"Retornando a mi Establo!", Toast.LENGTH_SHORT).show();
+            onBackPressed();
+            return true;
+        }
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_saca) {
+
+            RegistrarSaca();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void LeerGanado(String ganado_id, String sesion){
+        final String ganado_identificador = ganado_id.trim();
+        final String estado = sesion.trim();
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_VER_GANADOS,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            String success = jsonObject.getString("success");
+
+                            if (success.equals("1")){
+                                JSONArray message = jsonObject.getJSONArray("message");
+
+                                String raza = message.getJSONObject(0).getString("raza");
+                                String procedencia = message.getJSONObject(0).getString("procedencia");
+                                String registro = message.getJSONObject(0).getString("registro");
+
+                                ganado_raza.setText(raza);
+                                ganado_procedencia.setText(procedencia);
+                                ganado_registro.setText(registro);
+
+                                String dob = message.getJSONObject(0).getString("dob");
+                                String peso_dob = message.getJSONObject(0).getString("pesodob");
+                                String rgm = message.getJSONObject(0).getString("rgm");
+                                String vmadre = message.getJSONObject(0).getString("v_madre");
+                                String rgp = message.getJSONObject(0).getString("rgp");
+                                String vpadre = message.getJSONObject(0).getString("v_padre");
+
+                                ganado_dob.setText(dob);
+                                ganado_peso_dob.setText(peso_dob);
+                                ganado_rpm.setText(rgm);
+                                ganado_vmadre.setText(vmadre);
+                                ganado_rpg.setText(rgp);
+                                ganado_vpadre.setText(vpadre);
+
+                                String estado_saca = message.getJSONObject(0).getString("saca_estado");
+                                String motivo_saca = message.getJSONObject(0).getString("saca_motivo");
+                                String fecha_saca = message.getJSONObject(0).getString("saca_fecha");
+
+                                if (estado_saca.equals("t")){
+                                    final LinearLayout layout_saca = (LinearLayout) findViewById(R.id.layout_saca);
+                                    final TextView motivo_de_saca = (TextView) findViewById(R.id.tv_motivo_saca);
+                                    final TextView fecha_de_saca = (TextView) findViewById(R.id.tv_fecha_saca);
+
+                                    layout_saca.setVisibility(View.VISIBLE);
+                                    motivo_de_saca.setText("El motivo de Saca es: "+motivo_saca);
+                                    fecha_de_saca.setText("La fecha de Saca es: "+fecha_saca);
+                                }
+
+                            }
+                            if (success.equals("0")){
+                                String message = jsonObject.getString("message");
+
+                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
+                            }
+                        } catch (JSONException e){
+                            e.printStackTrace();
+                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                },
+                new Response.ErrorListener(){
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
+                    }
+                })
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> params = new HashMap<>();
+                params.put("ganado_id",ganado_identificador);
+                params.put("sesion",estado);
+                return params;
+            }
+        };
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+
     private void ver_monitoreo()  {
         final String ganado_identificador = ganado_id.trim();
         final String estado = sesion.trim();
@@ -391,7 +513,7 @@ public class GanadoActivity extends AppCompatActivity {
                                 JSONArray message = jsonObject.getJSONArray("message");
 
                                 if (message.length()==0){}
-                                else {                                    String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
+                                else {String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
                                     String corp_prof = message.getJSONObject(0).getString("prof_corp");
                                     String fecha_examen = message.getJSONObject(0).getString("fecha");
 
@@ -495,132 +617,6 @@ public class GanadoActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_ganado, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_refresh_vaca) {
-            Toast.makeText(GanadoActivity.this,"Refrescando Vista!", Toast.LENGTH_SHORT).show();
-            lista_de_produccion = new ArrayList<ArrayList<String>>();
-            producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Establo", lista_de_produccion));
-            LeerProduccionGanado(ganado_id,sesion);
-            return true;
-        }
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_gd_atras) {
-
-            Toast.makeText(GanadoActivity.this,"Retornando a mi Establo!", Toast.LENGTH_SHORT).show();
-            onBackPressed();
-            return true;
-        }
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_saca) {
-
-            RegistrarSaca();
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void LeerGanado(String ganado_id, String sesion){
-        final String ganado_identificador = ganado_id.trim();
-        final String estado = sesion.trim();
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_VER_GANADOS,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            String success = jsonObject.getString("success");
-
-                            if (success.equals("1")){
-                                JSONArray message = jsonObject.getJSONArray("message");
-
-                                String raza = message.getJSONObject(0).getString("raza");
-                                String procedencia = message.getJSONObject(0).getString("procedencia");
-                                String registro = message.getJSONObject(0).getString("registro");
-
-                                ganado_raza.setText(raza);
-                                ganado_procedencia.setText(procedencia);
-                                ganado_registro.setText(registro);
-
-                                String dob = message.getJSONObject(0).getString("dob");
-                                String peso_dob = message.getJSONObject(0).getString("pesodob");
-                                String rgm = message.getJSONObject(0).getString("rgm");
-                                String vmadre = message.getJSONObject(0).getString("v_madre");
-                                String rgp = message.getJSONObject(0).getString("rgp");
-                                String vpadre = message.getJSONObject(0).getString("v_padre");
-
-                                ganado_dob.setText(dob);
-                                ganado_peso_dob.setText(peso_dob);
-                                ganado_rpm.setText(rgm);
-                                ganado_vmadre.setText(vmadre);
-                                ganado_rpg.setText(rgp);
-                                ganado_vpadre.setText(vpadre);
-
-                                String estado_saca = message.getJSONObject(0).getString("saca_estado");
-                                String motivo_saca = message.getJSONObject(0).getString("saca_motivo");
-                                String fecha_saca = message.getJSONObject(0).getString("saca_fecha");
-
-                                if (estado_saca.equals("t")){
-                                    final LinearLayout layout_saca = (LinearLayout) findViewById(R.id.layout_saca);
-                                    final TextView motivo_de_saca = (TextView) findViewById(R.id.tv_motivo_saca);
-                                    final TextView fecha_de_saca = (TextView) findViewById(R.id.tv_fecha_saca);
-
-                                    layout_saca.setVisibility(View.VISIBLE);
-                                    motivo_de_saca.setText("El motivo de Saca es: "+motivo_saca);
-                                    fecha_de_saca.setText("La fecha de Saca es: "+fecha_saca);
-
-                                    fab_main.setVisibility(View.GONE);
-                                }
-
-                            }
-                            if (success.equals("0")){
-                                String message = jsonObject.getString("message");
-
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
-                            }
-                        } catch (JSONException e){
-                            e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                },
-                new Response.ErrorListener(){
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
-                    }
-                })
-        {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> params = new HashMap<>();
-                params.put("ganado_id",ganado_identificador);
-                params.put("sesion",estado);
-                return params;
-            }
-        };
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
-    }
-
     private void LeerProduccionGanado(String id_ganado,String sesion){
 
         final String ganado_identificador = id_ganado.trim();
@@ -654,8 +650,8 @@ public class GanadoActivity extends AppCompatActivity {
                                         String fecha_de_prod = message.getJSONObject(i).getString("fecha");
                                         String hora_en_prod = message.getJSONObject(i).getString("hora");
 
-                                        if (solidos_en_prod.equals("-1")) {solidos_en_prod = "No Registra";}
-                                        if (csomaticas_en_prod.equals("-1")) {csomaticas_en_prod = "No Registra";}
+                                        if (solidos_en_prod.equals("-1.00")) {solidos_en_prod = "No Registra";}
+                                        if (csomaticas_en_prod.equals("-1.00")) {csomaticas_en_prod = "No Registra";}
 
                                         ArrayList<String> ar = new ArrayList<String>();
                                         ar.add(produccion_id);

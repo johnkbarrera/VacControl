@@ -45,7 +45,7 @@ public class EstabloActivity extends AppCompatActivity {
     LinearLayout lista_vacia;
 
     /* SERVICIOS WEB */
-    private static String URL_GANADOS = AppServices.URL_GANADOS;
+    private static String URL_LISTA_GANADO = AppServices.URL_LISTA_GANADO;
     ArrayList<ArrayList<String>> lista_de_ganados;
 
 
@@ -121,7 +121,6 @@ public class EstabloActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_refresh) {
             Toast.makeText(EstabloActivity.this,"Refrescando Vista!", Toast.LENGTH_SHORT).show();
 
@@ -132,11 +131,27 @@ public class EstabloActivity extends AppCompatActivity {
             return true;
         }
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_atras) {
 
             Toast.makeText(EstabloActivity.this,"Retornando al Home!", Toast.LENGTH_SHORT).show();
             onBackPressed();
+            return true;
+        }
+
+        if (id == R.id.action_atras) {
+
+            Toast.makeText(EstabloActivity.this,"Retornando al Home!", Toast.LENGTH_SHORT).show();
+            onBackPressed();
+            return true;
+        }
+
+        if (id == R.id.action_ganados_eliminado) {
+
+            Intent mi_establo_eliminados = new Intent(this, EstabloRetiradosActivity.class);
+            mi_establo_eliminados.putExtra("establo_id",establo_id);
+            mi_establo_eliminados.putExtra("session",sesion);
+            startActivity(mi_establo_eliminados);
+
             return true;
         }
 
@@ -149,7 +164,7 @@ public class EstabloActivity extends AppCompatActivity {
         final String establo_identificador = id_establo.trim();
         final String estado = sesion.trim();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_GANADOS,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_LISTA_GANADO,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

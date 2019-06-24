@@ -36,8 +36,10 @@
         </activity>
         <activity android:name="com.andes.vaccontrol.ui.CrearEstabloActivity" />
         <activity android:name="com.andes.vaccontrol.ui.EstabloActivity" />
+        <activity android:name="com.andes.vaccontrol.ui.EstabloRetiradosActivity" />
         <activity android:name="com.andes.vaccontrol.ui.CrearGanadoActivity" />
         <activity android:name="com.andes.vaccontrol.ui.GanadoActivity" />
+        <activity android:name="com.andes.vaccontrol.ui.GanadoRetiradoActivity" />
         <activity android:name="com.andes.vaccontrol.ui.RegistrarFotosActivity" />
         <activity android:name="com.andes.vaccontrol.ui.LoginActivity" />
         <activity android:name="com.andes.vaccontrol.ui.RegisterActivity" />

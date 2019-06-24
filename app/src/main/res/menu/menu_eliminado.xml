@@ -12,10 +12,5 @@
         android:orderInCategory="100"
         android:title="Atrás"
         app:showAsAction="never" />
-
-    <item
-        android:id="@+id/action_ganados_eliminado"
-        android:orderInCategory="100"
-        android:title="Ganados Retirados"
-        app:showAsAction="never" />
+    
 </menu>

@@ -1782,7 +1782,9 @@ layout activity_crear_establo
 layout activity_crear_ganado
 layout activity_detalles_ganado
 layout activity_establo
+layout activity_establo_retirados
 layout activity_ganado
+layout activity_ganado_retirado
 layout activity_home
 layout activity_login
 layout activity_register
@@ -1843,6 +1845,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu_eliminado
 menu menu_establo
 menu menu_ganado
 menu menu_home

@@ -1,34 +1,17 @@
 package com.andes.vaccontrol.ui;
 
-import android.app.DatePickerDialog;
-import android.content.DialogInterface;
+
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.SpannableStringBuilder;
-import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,14 +30,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GanadoActivity extends AppCompatActivity {
+public class GanadoRetiradoActivity extends AppCompatActivity {
 
     /* HERRAMIENTAS PARA EL LAYOUT */
     TextView ganado_title, ganado_nom, ganado_registro, ganado_raza, ganado_procedencia;
@@ -62,39 +42,21 @@ public class GanadoActivity extends AppCompatActivity {
 
     TextView ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo, ganado_fecha_monitoreo_2;
 
-    // TextView ganado_c_somaticas, ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo;
-
     TextView ganado_reproduccion, ganado_estado_actual, ganado_peso_actual, ganado_fecha_celo;
 
     ImageButton fab_detalle, fab_estado_nutricional,fab_reproduccion, fab_potencial_genetico;
     LinearLayout lay_detalle, lay_estado_nutricional,lay_reproduccion, lay_potencial_genetico;
 
-    private FloatingActionButton fab_main, fab1_mail, fab2_share, fab3_share;
-    private Animation fab_open, fab_close, fab_clock, fab_anticlock;
-    TextView textview_add_1, textview_add_2, textview_add_3;
-
-    Boolean isOpen = false;
     Boolean isOpenDetalle = true;
     Boolean isOpenEstadoNutricional = true;
     Boolean isOpenPotencialGenetico = true;
     Boolean isOpenReproduccion = true;
-
-    /* LAYOUt REPRODUCCION*/
-    private static final String TAG = "GanadoActivity";
-    private DatePickerDialog.OnDateSetListener mDateSetListener;
-    private static String URL_ADD_ESTADO_REPRODUCCION = AppServices.URL_ADD_ESTADO_REPRODUCCION;
-
-    int ganado_estadovaca_pos, ganado_estado_pos,hora_produccion_pos;
-
-    private static String URL_ADD_PRODUCCION = AppServices.URL_ADD_PRODUCCION;
 
     /* SERVICIOS WEB */
     private static String URL_VER_GANADOS = AppServices.URL_VER_GANADO;
     private static String URL_VER_GANADO_REPRODUCCION = AppServices.URL_VER_GANADO_REPRODUCCION;
     private static String URL_VER_GANADO_MONITORERO = AppServices.URL_VER_GANADO_MONITORERO;
     private static String URL_VER_GANADO_PRODUCCION = AppServices.URL_VER_GANADO_PRODUCCION;
-    private static String URL_GANADO_SACA = AppServices.URL_GANADO_SACA;
-
 
 
     /* VARIABLES */
@@ -105,12 +67,10 @@ public class GanadoActivity extends AppCompatActivity {
     LinearLayout lista_vacia;
     ArrayList<ArrayList<String>> lista_de_produccion;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ganado);
+        setContentView(R.layout.activity_ganado_retirado);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -145,7 +105,7 @@ public class GanadoActivity extends AppCompatActivity {
         producciones_lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Intent mi_produccion = new Intent(view.getContext(), GanadoActivity.class);
+                Intent mi_produccion = new Intent(view.getContext(), GanadoRetiradoActivity.class);
                 mi_produccion.putExtra("posicion","Ganado "+(position+1));
                 mi_produccion.putExtra("ganado_id",lista_de_produccion.get(position).get(0));
                 mi_produccion.putExtra("nombre",lista_de_produccion.get(position).get(1));
@@ -167,7 +127,6 @@ public class GanadoActivity extends AppCompatActivity {
         /* cargamos datos de la generales*/
 
         LeerGanado(ganado_id, sesion);
-
 
         fab_detalle = findViewById(R.id.fab_detalles_ganado);
         lay_detalle = findViewById(R.id.lay_detalles_ganado);
@@ -257,110 +216,6 @@ public class GanadoActivity extends AppCompatActivity {
         });
 
 
-        fab_main = findViewById(R.id.fab);
-        fab1_mail = findViewById(R.id.fab1);
-        fab2_share = findViewById(R.id.fab2);
-        fab3_share = findViewById(R.id.fab3);
-        fab_close = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close);
-        fab_open = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_open);
-        fab_clock = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_rotate_clock);
-        fab_anticlock = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_rotate_anticlock);
-
-        textview_add_1 = (TextView) findViewById(R.id.tv_g_add_1);
-        textview_add_2 = (TextView) findViewById(R.id.tv_g_add_2);
-        textview_add_3 = (TextView) findViewById(R.id.tv_g_add_3);
-
-        fab_main.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (isOpen) {
-                    textview_add_1.setVisibility(View.INVISIBLE);
-                    textview_add_2.setVisibility(View.INVISIBLE);
-                    textview_add_3.setVisibility(View.INVISIBLE);
-                    fab3_share.startAnimation(fab_close);
-                    fab2_share.startAnimation(fab_close);
-                    fab1_mail.startAnimation(fab_close);
-                    fab_main.startAnimation(fab_anticlock);
-                    fab3_share.setClickable(false);
-                    fab2_share.setClickable(false);
-                    fab1_mail.setClickable(false);
-                    isOpen = false;
-                } else {
-                    textview_add_1.setVisibility(View.VISIBLE);
-                    textview_add_2.setVisibility(View.VISIBLE);
-                    textview_add_3.setVisibility(View.VISIBLE);
-                    fab3_share.startAnimation(fab_open);
-                    fab2_share.startAnimation(fab_open);
-                    fab1_mail.startAnimation(fab_open);
-                    fab_main.startAnimation(fab_clock);
-                    fab3_share.setClickable(true);
-                    fab2_share.setClickable(true);
-                    fab1_mail.setClickable(true);
-                    isOpen = true;
-                }
-
-            }
-        });
-
-
-        fab3_share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                textview_add_1.setVisibility(View.INVISIBLE);
-                textview_add_2.setVisibility(View.INVISIBLE);
-                textview_add_3.setVisibility(View.INVISIBLE);
-                fab3_share.startAnimation(fab_close);
-                fab2_share.startAnimation(fab_close);
-                fab1_mail.startAnimation(fab_close);
-                fab_main.startAnimation(fab_anticlock);
-                fab3_share.setClickable(false);
-                fab2_share.setClickable(false);
-                fab1_mail.setClickable(false);
-                isOpen = false;
-                RegistrarProduccion();
-            }
-        });
-
-        fab2_share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {textview_add_1.setVisibility(View.INVISIBLE);
-                textview_add_2.setVisibility(View.INVISIBLE);
-                textview_add_3.setVisibility(View.INVISIBLE);
-                fab3_share.startAnimation(fab_close);
-                fab2_share.startAnimation(fab_close);
-                fab1_mail.startAnimation(fab_close);
-                fab_main.startAnimation(fab_anticlock);
-                fab3_share.setClickable(false);
-                fab2_share.setClickable(false);
-                fab1_mail.setClickable(false);
-                isOpen = false;
-                Intent nueva_sesion_fotos = new Intent(view.getContext(), RegistrarFotosActivity.class);
-                nueva_sesion_fotos.putExtra("ganado_id",ganado_id);
-                nueva_sesion_fotos.putExtra("session",sesion);
-                startActivity(nueva_sesion_fotos);
-
-            }
-        });
-
-        fab1_mail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                textview_add_1.setVisibility(View.INVISIBLE);
-                textview_add_2.setVisibility(View.INVISIBLE);
-                textview_add_3.setVisibility(View.INVISIBLE);
-                fab3_share.startAnimation(fab_close);
-                fab2_share.startAnimation(fab_close);
-                fab1_mail.startAnimation(fab_close);
-                fab_main.startAnimation(fab_anticlock);
-                fab3_share.setClickable(false);
-                fab2_share.setClickable(false);
-                fab1_mail.setClickable(false);
-                isOpen = false;
-                RegistrarEstadoReproduccion();
-            }
-        });
     }
 
     @Override protected void onResume() {
@@ -371,7 +226,7 @@ public class GanadoActivity extends AppCompatActivity {
         ver_monitoreo();
 
         lista_de_produccion = new ArrayList<ArrayList<String>>();
-        producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Establo", lista_de_produccion));
+        producciones_lista.setAdapter(new AdaptadorProduccion(GanadoRetiradoActivity.this, "Establo", lista_de_produccion));
         LeerProduccionGanado(ganado_id,sesion);
     }
 
@@ -405,18 +260,18 @@ public class GanadoActivity extends AppCompatActivity {
                             if (success.equals("0")){
                                 String message = jsonObject.getString("message");
 
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
+                                Toast.makeText( GanadoRetiradoActivity.this, message, Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(GanadoRetiradoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 },
                 new Response.ErrorListener(){
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(GanadoRetiradoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
                     }
                 })
         {
@@ -467,18 +322,18 @@ public class GanadoActivity extends AppCompatActivity {
                             if (success.equals("0")){
                                 String message = jsonObject.getString("message");
 
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
+                                Toast.makeText( GanadoRetiradoActivity.this, message, Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(GanadoRetiradoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 },
                 new Response.ErrorListener(){
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(GanadoRetiradoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
                     }
                 })
         {
@@ -498,7 +353,7 @@ public class GanadoActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_ganado, menu);
+        getMenuInflater().inflate(R.menu.menu_eliminado, menu);
         return true;
     }
 
@@ -510,29 +365,21 @@ public class GanadoActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_refresh_vaca) {
-            Toast.makeText(GanadoActivity.this,"Refrescando Vista!", Toast.LENGTH_SHORT).show();
+        if (id == R.id.action_refresh) {
+            Toast.makeText(GanadoRetiradoActivity.this,"Refrescando Vista!", Toast.LENGTH_SHORT).show();
             lista_de_produccion = new ArrayList<ArrayList<String>>();
-            producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Establo", lista_de_produccion));
+            producciones_lista.setAdapter(new AdaptadorProduccion(GanadoRetiradoActivity.this, "Establo", lista_de_produccion));
             LeerProduccionGanado(ganado_id,sesion);
             return true;
         }
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_gd_atras) {
+        if (id == R.id.action_atras) {
 
-            Toast.makeText(GanadoActivity.this,"Retornando a mi Establo!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(GanadoRetiradoActivity.this,"Retornando a mi Establo!", Toast.LENGTH_SHORT).show();
             onBackPressed();
             return true;
         }
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_saca) {
-
-            RegistrarSaca();
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -586,25 +433,24 @@ public class GanadoActivity extends AppCompatActivity {
                                     motivo_de_saca.setText("El motivo de Saca es: "+motivo_saca);
                                     fecha_de_saca.setText("La fecha de Saca es: "+fecha_saca);
 
-                                    fab_main.setVisibility(View.GONE);
                                 }
 
                             }
                             if (success.equals("0")){
                                 String message = jsonObject.getString("message");
 
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
+                                Toast.makeText( GanadoRetiradoActivity.this, message, Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(GanadoRetiradoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 },
                 new Response.ErrorListener(){
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(GanadoRetiradoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
                     }
                 })
         {
@@ -639,7 +485,7 @@ public class GanadoActivity extends AppCompatActivity {
                                 if(message.length() == 0) {
                                     // Lista Vacia
                                     lista_vacia.setVisibility(View.VISIBLE);
-                                    Toast.makeText(GanadoActivity.this,"No registras producción!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(GanadoRetiradoActivity.this,"No registras producción!", Toast.LENGTH_SHORT).show();
                                 } else {
                                     lista_vacia.setVisibility(View.GONE);
 
@@ -668,24 +514,24 @@ public class GanadoActivity extends AppCompatActivity {
                                         lista_de_produccion.add(ar);
                                     }
 
-                                    producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Ordeño", lista_de_produccion));
+                                    producciones_lista.setAdapter(new AdaptadorProduccion(GanadoRetiradoActivity.this, "Ordeño", lista_de_produccion));
 
                                 }
                             }
                             if (success.equals("0")){
                                 String message = jsonObject.getString("message");
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
+                                Toast.makeText( GanadoRetiradoActivity.this, message, Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(GanadoRetiradoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 },
                 new Response.ErrorListener(){
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(GanadoRetiradoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
                     }
                 })
         {
@@ -702,515 +548,5 @@ public class GanadoActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-
-    /* REPRODUCCION*/
-
-    private  void RegistrarEstadoReproduccion(){
-
-        // LAYOUT
-        AlertDialog.Builder mBuilder = new AlertDialog.Builder(GanadoActivity.this);
-        View mView = getLayoutInflater().inflate(R.layout.dialog_registrar_reproduccion, null);
-
-
-
-        final ArrayAdapter<String> adapter_estado;
-        final ArrayAdapter<String> adapter_estadovaca;
-
-        final Spinner spn_lista_estado = (Spinner) mView.findViewById(R.id.spinner_gp_estado);
-        final Spinner spn_lista_estadovaca = (Spinner) mView.findViewById(R.id.spinner_gp_estadovaca);
-        final TextView et_fecha = (TextView) mView.findViewById(R.id.text_gd_datecelo);
-        final ImageView btn_get_fechaparto = (ImageView) mView.findViewById(R.id.btn_gd_date);
-        final EditText et_peso = (EditText) mView.findViewById(R.id.input_gd_peso);
-        final Button btn_add_parto = (Button) mView.findViewById(R.id.btn_confirm_parto);
-
-        mBuilder.setView(mView);
-        final AlertDialog dialog = mBuilder.create();
-        dialog.show();
-
-        adapter_estado = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.array_estado_en_produccion));
-        spn_lista_estado.setAdapter(adapter_estado);
-        spn_lista_estado.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ganado_estado_pos = position;
-
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                ganado_estado_pos = 0;
-            }
-        });
-
-        adapter_estadovaca = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.array_estado_vacas));
-        spn_lista_estadovaca.setAdapter(adapter_estadovaca);
-        spn_lista_estadovaca.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                ganado_estadovaca_pos = position;
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                ganado_estadovaca_pos = 0;
-            }
-        });
-
-
-        btn_get_fechaparto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Calendar cal = Calendar.getInstance();
-                int year = cal.get(Calendar.YEAR);
-                int month = cal.get(Calendar.MONTH);
-                int day = cal.get(Calendar.DAY_OF_MONTH);
-
-                DatePickerDialog dialog = new DatePickerDialog(
-                        GanadoActivity.this,
-                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
-                        mDateSetListener,
-                        year,month,day);
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                dialog.show();
-            }
-        });
-
-        mDateSetListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                month = month + 1;
-                Log.d(TAG, "onDateSet: mm/dd/yyy: " + month + "/" + day + "/" + year);
-
-                String date = year + "/" + month + "/" + day;
-                et_fecha.setText(date);
-            }
-        };
-
-        btn_add_parto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Confirmar codigo
-                if (verificar_campos(et_fecha,et_peso)){
-
-                    String gr_estado = adapter_estado.getItem(ganado_estado_pos).trim();
-                    String gr_estado_vaca = adapter_estadovaca.getItem(ganado_estado_pos).trim();
-                    final String gr_fecha_celo = et_fecha.getText().toString().trim();
-                    final String gr_peso = et_peso.getText().toString().trim();
-
-                    add_estado_reproduccion(sesion, ganado_id, gr_estado_vaca, gr_estado, gr_fecha_celo,gr_peso, dialog);
-                } else {
-                    Toast.makeText( GanadoActivity.this, "Complete los campos requeridos!", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
-
-    private void add_estado_reproduccion(String sesion_est, String ganado_id, String estadovaca, String estado_b, String fecha, String peso, AlertDialog dialogx){
-
-        final String sesion = sesion_est.trim();
-        final String ganado_identificador = ganado_id.trim();
-        final String estado_vaca = estadovaca.trim();
-        final String estado_bool = estado_b.trim();
-        final String ganado_fecha = fecha.trim();
-        final String ganado_peso = peso.trim();
-
-        final AlertDialog dialog = dialogx;
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_ADD_ESTADO_REPRODUCCION,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            String success = jsonObject.getString("success");
-
-                            if (success.equals("1")){
-                                String message = jsonObject.getString("message");
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
-                                dialog.cancel();
-                                ver_reproduccion();
-                            }
-                            if (success.equals("0")){
-                                String message = jsonObject.getString("message");
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
-                            }
-                        } catch (JSONException e){
-                            e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                },
-                new Response.ErrorListener(){
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
-                    }
-                })
-        {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> params = new HashMap<>();
-                params.put("sesion",sesion);
-                params.put("ganado_id",ganado_identificador);
-                params.put("gr_estado_vaca",estado_vaca);
-                params.put("gr_estado",estado_bool);
-                params.put("gr_fecha_celo",ganado_fecha);
-                params.put("gr_peso",ganado_peso);
-                return params;
-
-            }
-        };
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
-
-
-    }
-
-    private boolean verificar_campos(TextView fecha, EditText peso){
-
-        boolean estado = true;
-        int errorColor = ContextCompat.getColor(getApplicationContext(), R.color.colorAccent);
-
-        String fecha_txt = fecha.getText().toString();
-        String peso_txt = peso.getText().toString();
-
-        if (fecha_txt.isEmpty()){
-            estado = false;
-            //mensaje_error = mensaje_error + "* El ganado necesita tener nombre"+"\n";
-            //Toast.makeText(CrearGanadoActivity.this, "El ganado necesita tener nombre", Toast.LENGTH_SHORT).show();
-            String errorString = "El ganado necesita tener nombre";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            fecha.setError(spannableStringBuilder);
-
-        }
-        if (peso_txt.isEmpty()){
-            estado = false;
-            String errorString = "Registre la fecha de ultimo celo";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            peso.setError(spannableStringBuilder);
-        }
-
-        return estado;
-    }
-
-    /* PRODUCCION*/
-
-    private  void RegistrarProduccion(){
-
-        // LAYOUT
-        AlertDialog.Builder mBuilder = new AlertDialog.Builder(GanadoActivity.this);
-        View mView = getLayoutInflater().inflate(R.layout.dialog_registrar_produccion, null);
-
-
-        final ArrayAdapter<String> adapter_produccion_hora;
-
-        final EditText et_fecha = (EditText) mView.findViewById(R.id.input_gpr_fecha);
-        final ImageView btn_get_fechaproducion = (ImageView) mView.findViewById(R.id.btn_grp_date);
-        final Spinner spn_hora_produccion = (Spinner) mView.findViewById(R.id.spinner_gpr_hora);
-        final EditText et_litros = (EditText) mView.findViewById(R.id.input_gpr_litros);
-        final EditText et_solidos = (EditText) mView.findViewById(R.id.input_gpr_solidos);
-        final EditText et_c_somaticas = (EditText) mView.findViewById(R.id.input_gpr_csomaticas);
-        final Button btn_add_produccion = (Button) mView.findViewById(R.id.btn_confirm_produccion);
-
-        mBuilder.setView(mView);
-        final AlertDialog dialog = mBuilder.create();
-        dialog.show();
-
-
-        btn_get_fechaproducion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Calendar cal = Calendar.getInstance();
-                int year = cal.get(Calendar.YEAR);
-                int month = cal.get(Calendar.MONTH);
-                int day = cal.get(Calendar.DAY_OF_MONTH);
-
-                DatePickerDialog dialog = new DatePickerDialog(
-                        GanadoActivity.this,
-                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
-                        mDateSetListener,
-                        year,month,day);
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                dialog.show();
-            }
-        });
-
-        mDateSetListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                month = month + 1;
-                Log.d(TAG, "onDateSet: mm/dd/yyy: " + month + "/" + day + "/" + year);
-
-                String date = year + "/" + month + "/" + day;
-                et_fecha.setText(date);
-            }
-        };
-
-        adapter_produccion_hora = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.array_produccion_horas));
-        spn_hora_produccion.setAdapter(adapter_produccion_hora);
-        spn_hora_produccion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                hora_produccion_pos = position;
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                hora_produccion_pos = 0;
-            }
-        });
-
-
-        btn_add_produccion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Confirmar codigo
-                if (verificar_campos_produccion(et_fecha, et_litros)){
-
-                    final String gpr_fecha_prod = et_fecha.getText().toString().trim();
-                    final String gpr_hora_prod = adapter_produccion_hora.getItem(hora_produccion_pos).trim();
-                    final String gpr_litro = et_litros.getText().toString().trim();
-                    String gpr_solidos = et_solidos.getText().toString().trim();
-                    String gpr_c_somaticas = et_c_somaticas.getText().toString().trim();
-
-                    if (gpr_solidos.isEmpty()){gpr_solidos = "-1";}
-                    if (gpr_c_somaticas.isEmpty()){gpr_c_somaticas = "-1";}
-
-                    add_estado_produccion(sesion, ganado_id, gpr_fecha_prod, gpr_hora_prod, gpr_litro, gpr_solidos, gpr_c_somaticas , dialog);
-                } else {
-                    Toast.makeText( GanadoActivity.this, "Complete los campos requeridos!", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
-
-    private boolean verificar_campos_produccion(TextView fecha, EditText litros){
-
-        boolean estado = true;
-        int errorColor = ContextCompat.getColor(getApplicationContext(), R.color.colorAccent);
-
-        String fecha_txt = fecha.getText().toString();
-        String litros_txt = litros.getText().toString();
-
-        if (fecha_txt.isEmpty()){
-            estado = false;
-            String errorString = "Ingrese una fecha";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            fecha.setError(spannableStringBuilder);
-
-        }
-        if (litros_txt.isEmpty()){
-            estado = false;
-            String errorString = "Ingrese la producción en litro";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            litros.setError(spannableStringBuilder);
-        }
-
-        return estado;
-    }
-
-    private void add_estado_produccion(String sesion_est, String ganado_id, String fecha_prod, String hora_prod, String litros_prod, String solidos_prod, String somaticas_prod, AlertDialog dialogx){
-
-        final String sesion = sesion_est.trim();
-        final String ganado_identificador = ganado_id.trim();
-        final String produccion_fecha = fecha_prod.trim();
-        final String produccion_hora = hora_prod.trim();
-        final String produccion_litros = litros_prod.trim();
-        final String produccion_solidos = solidos_prod.trim();
-        final String produccion_c_somaticas = somaticas_prod.trim();
-
-        final AlertDialog dialog = dialogx;
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_ADD_PRODUCCION,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            String success = jsonObject.getString("success");
-
-                            if (success.equals("1")){
-                                String message = jsonObject.getString("message");
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
-                                dialog.cancel();
-
-                                lista_de_produccion = new ArrayList<ArrayList<String>>();
-                                producciones_lista.setAdapter(new AdaptadorProduccion(GanadoActivity.this, "Establo", lista_de_produccion));
-                                LeerProduccionGanado(ganado_identificador,sesion);
-                            }
-                            if (success.equals("0")){
-                                String message = jsonObject.getString("message");
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
-                            }
-                        } catch (JSONException e){
-                            e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                },
-                new Response.ErrorListener(){
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
-                    }
-                })
-        {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> params = new HashMap<>();
-                params.put("sesion",sesion);
-                params.put("ganado_id",ganado_identificador);
-                params.put("gpr_fecha",produccion_fecha);
-                params.put("gpr_hora",produccion_hora);
-                params.put("gpr_litros",produccion_litros);
-                params.put("gpr_solidos",produccion_solidos);
-                params.put("gpr_c_somaticas",produccion_c_somaticas);
-
-                return params;
-            }
-        };
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
-
-
-    }
-
-
-
-    /* SACA */
-
-    private  void RegistrarSaca(){
-
-        // LAYOUT
-        AlertDialog.Builder mBuilder = new AlertDialog.Builder(GanadoActivity.this);
-        View mView = getLayoutInflater().inflate(R.layout.dialog_saca_ganado, null);
-
-
-        final EditText et_motivo = (EditText) mView.findViewById(R.id.input_gp_saca_motivo);
-        final Button btn_saca_ganado = (Button) mView.findViewById(R.id.btn_confirm_saca);
-
-        mBuilder.setView(mView);
-        final AlertDialog dialog_delete = mBuilder.create();
-        dialog_delete.show();
-
-        btn_saca_ganado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Confirmar codigo
-                if (verificar_campos_saca(et_motivo)){
-
-                    final String gpr_motivo_saca = et_motivo.getText().toString().trim();
-                    final String gpr_saca_fecha  = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-
-                    AlertDialog alertDialog = new AlertDialog.Builder(GanadoActivity.this)
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .setTitle("Cuidado!")
-                            .setMessage("Está seguro que desea eliminar el registro?")
-                            .setPositiveButton("Si", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    Eliminar_Ganado(sesion, ganado_id, gpr_motivo_saca, gpr_saca_fecha, dialog_delete);
-                                    //finish();
-                                }
-                            })
-                            .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    dialog_delete.cancel();
-                                    Toast.makeText(getApplicationContext(),"Proceso cancelado",Toast.LENGTH_LONG).show();
-                                }
-                            })
-                            .show();
-
-                } else {
-                    Toast.makeText( GanadoActivity.this, "Complete los campos requeridos!", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
-
-    private boolean verificar_campos_saca(TextView motivo){
-
-        boolean estado = true;
-        int errorColor = ContextCompat.getColor(getApplicationContext(), R.color.colorAccent);
-
-        String motivo_txt = motivo.getText().toString();
-
-        if (motivo_txt.isEmpty()){
-            estado = false;
-            String errorString = "Ingrese el motivo de saca";
-            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(errorColor);
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(errorString);
-            spannableStringBuilder.setSpan(foregroundColorSpan, 0, errorString.length(), 0);
-            motivo.setError(spannableStringBuilder);
-
-        }
-        return estado;
-    }
-
-    private void Eliminar_Ganado(String sesion_est, String ganado_id, String motivo, String fecha, AlertDialog dialogx){
-
-        final String sesion = sesion_est.trim();
-        final String ganado_identificador = ganado_id.trim();
-        final String saca_motivo = motivo.trim();
-        final String saca_fecha = fecha.trim();
-
-        final AlertDialog dialog = dialogx;
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_GANADO_SACA,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            String success = jsonObject.getString("success");
-
-                            if (success.equals("1")){
-                                String message = jsonObject.getString("message");
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
-                                dialog.cancel();
-                                LeerGanado(ganado_identificador, sesion);
-                            }
-                            if (success.equals("0")){
-                                String message = jsonObject.getString("message");
-                                Toast.makeText( GanadoActivity.this, message, Toast.LENGTH_SHORT).show();
-                            }
-                        } catch (JSONException e){
-                            e.printStackTrace();
-                            Toast.makeText(GanadoActivity.this,"Error obteniendo los Datos!" + e.toString(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                },
-                new Response.ErrorListener(){
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(GanadoActivity.this,"Conexión fallida!", Toast.LENGTH_SHORT).show();
-                    }
-                })
-        {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> params = new HashMap<>();
-                params.put("sesion",sesion);
-                params.put("ganado_id",ganado_identificador);
-                params.put("saca_motivo",saca_motivo);
-                params.put("saca_fecha",saca_fecha);
-
-                return params;
-            }
-        };
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
-
-
-    }
 
 }
