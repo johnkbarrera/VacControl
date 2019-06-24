@@ -2,41 +2,37 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
     plugin-version="3.4.1"
-    timestamp="1561408732255"
+    timestamp="1561410936878"
     token="6822517057927298515"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="896" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="132" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="97" />
+        duration="0" />
     <task
         name="verifier"
-        duration="46" />
-
-    <artifact
-        location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1561407043770"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1561410870443"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
+            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
@@ -44,13 +40,13 @@
             location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -59,34 +55,18 @@
             location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1561408474365"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1561408732255"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
+        timestamp="1561410936878"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

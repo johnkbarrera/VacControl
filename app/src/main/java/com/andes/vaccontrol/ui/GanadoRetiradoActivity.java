@@ -500,8 +500,8 @@ public class GanadoRetiradoActivity extends AppCompatActivity {
                                         String fecha_de_prod = message.getJSONObject(i).getString("fecha");
                                         String hora_en_prod = message.getJSONObject(i).getString("hora");
 
-                                        if (solidos_en_prod.equals("-1")) {solidos_en_prod = "No Registra";}
-                                        if (csomaticas_en_prod.equals("-1")) {csomaticas_en_prod = "No Registra";}
+                                        if (solidos_en_prod.equals("-1.00")) {solidos_en_prod = "No Registra";}
+                                        if (csomaticas_en_prod.equals("-1.00")) {csomaticas_en_prod = "No Registra";}
 
                                         ArrayList<String> ar = new ArrayList<String>();
                                         ar.add(produccion_id);
