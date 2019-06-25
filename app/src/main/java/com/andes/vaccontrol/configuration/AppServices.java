@@ -2,7 +2,7 @@ package com.andes.vaccontrol.configuration;
 
 public interface AppServices {
 
-    String URL_PROYECTO = "http://10.66.49.59/vacbservices";
+    String URL_PROYECTO = "http://172.22.3.169/vacbservices";
 
 
     String URL_LOGIN = URL_PROYECTO+"/services/login.php";
