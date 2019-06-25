@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:mediarouter-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2e241ac158bdb2f4eeb31b88c6aa3e86\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\dcc4ced87d05207892a4966a278a54cd\AndroidManifest.xml:17:1-22:12
@@ -40,20 +40,20 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jk.barrerac\.grad
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\11a8e051af25d9458ed9385b54fa9a04\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6b716bf120cbc7cc3f574a34b589b594\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\c66c8c898197d5019bb5f40557f9c691\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:11-69
@@ -61,14 +61,18 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:5:22-64
-uses-feature#android.hardware.camera
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:7:5-8:35
-	android:required
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:8:9-32
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:7:19-57
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:6:22-78
+uses-feature#android.hardware.camera
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:8:5-9:35
+	android:required
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:9:9-32
+	android:name
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:8:19-57
 application
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:11:5-39:19
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:12:5-41:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6d048ebda732d85c2c731be9cd59aae9\AndroidManifest.xml:9:5-20
@@ -82,71 +86,71 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jk.barrera
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5220442b3accc22ab06462dfe2ba5191\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:15:9-41
 	android:roundIcon
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:14:9-41
 	android:allowBackup
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:18:9-40
 activity#com.andes.vaccontrol.ui.HomeActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:18:9-27:20
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:20:9-29:20
 	android:label
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:20:13-45
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:22:13-45
 	android:theme
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:21:13-56
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:23:13-56
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:19:13-44
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:21:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:27:27-74
 activity#com.andes.vaccontrol.ui.CrearEstabloActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:28:9-61
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:9-61
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:28:19-58
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:19-58
 activity#com.andes.vaccontrol.ui.EstabloActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:29:9-56
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:31:9-56
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:29:19-53
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:31:19-53
 activity#com.andes.vaccontrol.ui.EstabloRetiradosActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:9-65
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:9-65
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:19-62
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:19-62
 activity#com.andes.vaccontrol.ui.CrearGanadoActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:31:9-60
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:33:9-60
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:31:19-57
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:33:19-57
 activity#com.andes.vaccontrol.ui.GanadoActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:9-55
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:34:9-55
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:19-52
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:34:19-52
 activity#com.andes.vaccontrol.ui.GanadoRetiradoActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:33:9-63
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:9-63
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:33:19-60
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:19-60
 activity#com.andes.vaccontrol.ui.RegistrarFotosActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:34:9-63
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:9-63
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:34:19-60
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:19-60
 activity#com.andes.vaccontrol.ui.LoginActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:9-54
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:9-54
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:19-51
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:19-51
 activity#com.andes.vaccontrol.ui.RegisterActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:9-57
+ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:9-57
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:19-54
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:19-54
 uses-sdk
 INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
