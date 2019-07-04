@@ -1,4 +1,4 @@
-#Mon Jun 24 20:43:33 COT 2019
+#Thu Jul 04 15:54:15 COT 2019
 base.0=C\:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
 path.0=classes.dex
 renamed.0=classes.dex

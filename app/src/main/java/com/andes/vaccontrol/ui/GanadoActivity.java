@@ -787,7 +787,7 @@ public class GanadoActivity extends AppCompatActivity {
                 if (verificar_campos(et_fecha,et_peso)){
 
                     String gr_estado = adapter_estado.getItem(ganado_estado_pos).trim();
-                    String gr_estado_vaca = adapter_estadovaca.getItem(ganado_estado_pos).trim();
+                    String gr_estado_vaca = adapter_estadovaca.getItem(ganado_estadovaca_pos).trim();
                     final String gr_fecha_celo = et_fecha.getText().toString().trim();
                     final String gr_peso = et_peso.getText().toString().trim();
 
