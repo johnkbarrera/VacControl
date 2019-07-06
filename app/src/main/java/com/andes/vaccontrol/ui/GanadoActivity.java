@@ -1,11 +1,14 @@
 package com.andes.vaccontrol.ui;
 
+import android.Manifest;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -334,10 +337,18 @@ public class GanadoActivity extends AppCompatActivity {
                 fab2_share.setClickable(false);
                 fab1_mail.setClickable(false);
                 isOpen = false;
-                Intent nueva_sesion_fotos = new Intent(view.getContext(), RegistrarFotosActivity.class);
+//                Intent nueva_sesion_fotos = new Intent(view.getContext(), RegistrarFotosActivity.class);
+
+                Intent nueva_sesion_fotos = new Intent(view.getContext(), RegistrarFotosHdActivity.class);
                 nueva_sesion_fotos.putExtra("ganado_id",ganado_id);
                 nueva_sesion_fotos.putExtra("session",sesion);
-                startActivity(nueva_sesion_fotos);
+
+                if (ContextCompat.checkSelfPermission(view.getContext(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                    //btn_foto_frontal.setEnabled(false);
+                    ActivityCompat.requestPermissions(GanadoActivity.this, new String[] { Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE }, 0);
+                } else {
+                    startActivity(nueva_sesion_fotos);
+                }
 
             }
         });

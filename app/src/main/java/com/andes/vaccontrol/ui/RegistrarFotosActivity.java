@@ -207,7 +207,7 @@ public class RegistrarFotosActivity extends AppCompatActivity {
                             }
                             if (success.equals("0")){
                                 String message = jsonObject.getString("message");
-                                // Toast.makeText( RegistrarFotosActivity.this, message, Toast.LENGTH_SHORT).show();
+                                Toast.makeText( RegistrarFotosActivity.this, message, Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e){
                             e.printStackTrace();

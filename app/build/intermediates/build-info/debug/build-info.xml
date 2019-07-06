@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="3.4.1"
-    timestamp="1562273583804"
+    timestamp="1562371947946"
     token="6822517057927298515"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="8722" />
+        duration="1542" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="177" />
+        duration="77" />
     <task
         name="verifier"
-        duration="144" />
+        duration="47" />
 
     <artifact
         location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1562273583804"
+        timestamp="1562371947946"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\jk.barrerac\Desktop\VacControl\app\build\intermediates\split-apk\debug\slices\slice_7.apk"

@@ -1,1 +1,1 @@
-{"mName":"externalOverride","mStoreFile":"D:\\key.jks","mStorePassword":"qwerty123456","mKeyAlias":"firma","mKeyPassword":"qwerty123456","mStoreType":"jks","mV1SigningEnabled":false,"mV2SigningEnabled":true}
+{"mName":"debug","mStoreFile":"C:\\Users\\jk.barrerac\\.android\\debug.keystore","mStorePassword":"android","mKeyAlias":"AndroidDebugKey","mKeyPassword":"android","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}

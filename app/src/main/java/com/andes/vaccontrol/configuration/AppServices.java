@@ -24,6 +24,7 @@ public interface AppServices {
 
     String URL_ADD_FOTOS = URL_PROYECTO+"/services/add_sesion_fotos.php";
     String URL_SUBIR_FOTO = URL_PROYECTO+"/services/subir_foto.php";
+    String URL_SUBIR_FOTO_HD = URL_PROYECTO+"/services/subir_foto_hd.php";
 
     String URL_ADD_ESTADO_REPRODUCCION = URL_PROYECTO+"/services/add_estado_reproduccion.php";
     String URL_ADD_PRODUCCION = URL_PROYECTO+"/services/add_produccion.php";
