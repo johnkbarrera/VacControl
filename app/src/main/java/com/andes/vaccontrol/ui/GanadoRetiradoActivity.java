@@ -40,7 +40,7 @@ public class GanadoRetiradoActivity extends AppCompatActivity {
     TextView ganado_title, ganado_nom, ganado_registro, ganado_raza, ganado_procedencia;
     TextView ganado_dob, ganado_peso_dob, ganado_rpm, ganado_vmadre, ganado_rpg, ganado_vpadre;
 
-    TextView ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo, ganado_fecha_monitoreo_2;
+    TextView ganado_prof_ubre, ganado_prof_corporal, ganado_corp_bsc,  ganado_fecha_monitoreo, ganado_fecha_monitoreo_2;
 
     TextView ganado_reproduccion, ganado_estado_actual, ganado_peso_actual, ganado_fecha_celo;
 
@@ -91,6 +91,7 @@ public class GanadoRetiradoActivity extends AppCompatActivity {
 
         ganado_prof_ubre = findViewById(R.id.tv_gd_profubre);
         ganado_prof_corporal = findViewById(R.id.tv_gd_profcorp);
+        ganado_corp_bsc = findViewById(R.id.tv_gd_bsc);
         ganado_fecha_monitoreo = findViewById(R.id.tv_gd_monitoreo_fecha);
         ganado_fecha_monitoreo_2 = findViewById(R.id.tv_gd_monitoreo_fecha_2);
 
@@ -246,13 +247,16 @@ public class GanadoRetiradoActivity extends AppCompatActivity {
                                 JSONArray message = jsonObject.getJSONArray("message");
 
                                 if (message.length()==0){}
-                                else {                                    String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
+                                else {
+                                    String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
                                     String corp_prof = message.getJSONObject(0).getString("prof_corp");
+                                    String corp_bsc = message.getJSONObject(0).getString("bsc");
                                     String fecha_examen = message.getJSONObject(0).getString("fecha");
 
 
                                     ganado_prof_ubre.setText(ubre_prof);
                                     ganado_prof_corporal.setText(corp_prof);
+                                    ganado_corp_bsc.setText(corp_bsc);
                                     ganado_fecha_monitoreo.setText(fecha_examen);
                                     ganado_fecha_monitoreo_2.setText(fecha_examen);
                                 }

@@ -50,6 +50,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -63,9 +64,9 @@ public class GanadoActivity extends AppCompatActivity {
     TextView ganado_title, ganado_nom, ganado_registro, ganado_raza, ganado_procedencia;
     TextView ganado_dob, ganado_peso_dob, ganado_rpm, ganado_vmadre, ganado_rpg, ganado_vpadre;
 
-    TextView ganado_prof_ubre, ganado_prof_corporal, ganado_fecha_monitoreo, ganado_fecha_monitoreo_2;
+    TextView ganado_prof_ubre, ganado_prof_corporal, ganado_corp_bsc,  ganado_fecha_monitoreo, ganado_fecha_monitoreo_2;
 
-    TextView ganado_reproduccion, ganado_estado_actual, ganado_peso_actual, ganado_fecha_celo;
+    TextView ganado_reproduccion, ganado_estado_actual, ganado_peso_actual, ganado_fecha_celo,ganado_proxima_fecha_celo;
 
     ImageButton fab_detalle, fab_estado_nutricional,fab_reproduccion, fab_potencial_genetico;
     LinearLayout lay_detalle, lay_estado_nutricional,lay_reproduccion, lay_potencial_genetico;
@@ -132,6 +133,7 @@ public class GanadoActivity extends AppCompatActivity {
 
         ganado_prof_ubre = findViewById(R.id.tv_gd_profubre);
         ganado_prof_corporal = findViewById(R.id.tv_gd_profcorp);
+        ganado_corp_bsc = findViewById(R.id.tv_gd_bsc);
         ganado_fecha_monitoreo = findViewById(R.id.tv_gd_monitoreo_fecha);
         ganado_fecha_monitoreo_2 = findViewById(R.id.tv_gd_monitoreo_fecha_2);
 
@@ -139,6 +141,7 @@ public class GanadoActivity extends AppCompatActivity {
         ganado_estado_actual = findViewById(R.id.tv_gd_estado_vaca);
         ganado_peso_actual = findViewById(R.id.tv_gd_peso);
         ganado_fecha_celo = findViewById(R.id.tv_gd_fecha_celo);
+        ganado_proxima_fecha_celo = findViewById(R.id.tv_gd_proxima_fecha_celo);
 
         lista_vacia = findViewById(R.id.empty_list_gd_prod);
         producciones_lista = (ListView) findViewById(R.id.lista_vaca_produccion);
@@ -524,13 +527,16 @@ public class GanadoActivity extends AppCompatActivity {
                                 JSONArray message = jsonObject.getJSONArray("message");
 
                                 if (message.length()==0){}
-                                else {String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
+                                else {
+                                    String ubre_prof = message.getJSONObject(0).getString("prof_ubre");
                                     String corp_prof = message.getJSONObject(0).getString("prof_corp");
+                                    String corp_bsc = message.getJSONObject(0).getString("bsc");
                                     String fecha_examen = message.getJSONObject(0).getString("fecha");
 
 
                                     ganado_prof_ubre.setText(ubre_prof);
                                     ganado_prof_corporal.setText(corp_prof);
+                                    ganado_corp_bsc.setText(corp_bsc);
                                     ganado_fecha_monitoreo.setText(fecha_examen);
                                     ganado_fecha_monitoreo_2.setText(fecha_examen);
                                 }
@@ -590,10 +596,24 @@ public class GanadoActivity extends AppCompatActivity {
                                     if (estado_rep.equals("t")){ estado_rep = "Si";}
                                     if (estado_rep.equals("f")){ estado_rep = "No";}
 
+
+                                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                                    Date FechaCelo = null;
+                                    try {
+                                        FechaCelo = dateFormat.parse(ultimo_celo);
+
+                                    } catch (ParseException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd");
+                                    String proximo_celo = timeFormat.format(sumarDiasAFecha(FechaCelo,21));
+
                                     ganado_reproduccion.setText(estado_rep);
                                     ganado_estado_actual.setText(estado_vaca);
                                     ganado_peso_actual.setText(peso_actual);
                                     ganado_fecha_celo.setText(ultimo_celo);
+                                    ganado_proxima_fecha_celo.setText(proximo_celo);
                                 }
 
                             }
@@ -626,6 +646,14 @@ public class GanadoActivity extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
+    }
+
+    public static Date sumarDiasAFecha(Date fecha, int dias){
+        if (dias==0) return fecha;
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(fecha);
+        calendar.add(Calendar.DAY_OF_YEAR, dias);
+        return calendar.getTime();
     }
 
     private void LeerProduccionGanado(String id_ganado,String sesion){

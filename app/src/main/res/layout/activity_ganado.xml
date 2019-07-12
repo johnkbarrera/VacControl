@@ -393,11 +393,32 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Condición Corporal:  "
+                            android:text="Profundidad Corporal:  "
                             android:textAlignment="textEnd" />
 
                         <TextView
                             android:id="@+id/tv_gd_profcorp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Condición Corporal:  "
+                            android:textAlignment="textEnd" />
+
+                        <TextView
+                            android:id="@+id/tv_gd_bsc"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -650,6 +671,28 @@
 
                         <TextView
                             android:id="@+id/tv_gd_fecha_celo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Proxima fecha de Celo:  "
+                            android:textAlignment="textEnd" />
+
+                        <TextView
+                            android:id="@+id/tv_gd_proxima_fecha_celo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

@@ -1696,6 +1696,7 @@ id tv_fotos_date
 id tv_g_add_1
 id tv_g_add_2
 id tv_g_add_3
+id tv_gd_bsc
 id tv_gd_dob
 id tv_gd_estado_vaca
 id tv_gd_fecha_celo
@@ -1706,6 +1707,7 @@ id tv_gd_pesodob
 id tv_gd_preñada
 id tv_gd_profcorp
 id tv_gd_profubre
+id tv_gd_proxima_fecha_celo
 id tv_gd_rgm
 id tv_gd_rgp
 id tv_gd_vmadre
