@@ -1864,7 +1864,9 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap ic_milk
 mipmap ic_pregnantcow
+mipmap icono
 mipmap icono_app
+mipmap icono_imagen
 mipmap kilo
 mipmap litros
 mipmap user

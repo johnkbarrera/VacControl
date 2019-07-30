@@ -64,7 +64,7 @@ public class AdaptadorEstablos extends BaseAdapter {
 
         nombre.setText(""+datos.get(i).get(1));
         detalle.setText(""+datos.get(i).get(2));
-        imagen.setImageResource(R.mipmap.farm);
+        imagen.setImageResource(R.mipmap.farm2);
 
         /*
         imagen.setTag(i);

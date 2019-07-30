@@ -98,19 +98,20 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
-                    android:text="Registrar Usuario"
+                    android:text="Registrar usuario"
                     android:textSize="16sp" />
 
 
-                <TextView android:id="@+id/forgot_password"
+                <TextView
+                    android:id="@+id/forgot_password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="olvidé mi contraseña"
-                    android:gravity="center"
-                    android:textSize="16sp"
                     android:layout_below="@+id/link_register"
-                    android:layout_centerHorizontal="true"/>
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Olvidé mi contraseña"
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 

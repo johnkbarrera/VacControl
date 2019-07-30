@@ -119,7 +119,7 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jk.barrera
 	android:roundIcon
 		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:21:9-54
 	android:icon
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:19:9-44
 	android:allowBackup
 		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme

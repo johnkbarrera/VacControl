@@ -376,6 +376,10 @@
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2b90679471d462b8a096ce9bfb06eef2\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     },
     {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icono_imagen.png.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\mipmap-xxhdpi\\icono_imagen.png"
+    },
+    {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_11.png.flat",
         "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\2e241ac158bdb2f4eeb31b88c6aa3e86\\res\\drawable-xxxhdpi-v4\\ic_group_expand_11.png"
     },
@@ -2418,6 +2422,10 @@
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_camera.png.flat",
         "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\mipmap-xhdpi\\ic_camera.png"
+    },
+    {
+        "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icono.jpg.flat",
+        "source": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\src\\main\\res\\mipmap-xxhdpi\\icono.jpg"
     },
     {
         "merged": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_dialog_close_light.png.flat",
