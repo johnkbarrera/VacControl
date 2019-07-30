@@ -5604,13 +5604,12 @@ public final class R {
     public static final int ic_launcher_round=0x7f0e000a;
     public static final int ic_milk=0x7f0e000b;
     public static final int ic_pregnantcow=0x7f0e000c;
-    public static final int icono=0x7f0e000d;
-    public static final int icono_app=0x7f0e000e;
-    public static final int icono_imagen=0x7f0e000f;
-    public static final int kilo=0x7f0e0010;
-    public static final int litros=0x7f0e0011;
-    public static final int user=0x7f0e0012;
-    public static final int vaca=0x7f0e0013;
+    public static final int icono_app=0x7f0e000d;
+    public static final int icono_imagen=0x7f0e000e;
+    public static final int kilo=0x7f0e000f;
+    public static final int litros=0x7f0e0010;
+    public static final int user=0x7f0e0011;
+    public static final int vaca=0x7f0e0012;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0f0000;
