@@ -2,7 +2,6 @@ package com.andes.vaccontrol.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -11,13 +10,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.andes.vaccontrol.R;
 import com.andes.vaccontrol.SessionManager;
 import com.andes.vaccontrol.adapter.AdaptadorEstablos;
-import com.andes.vaccontrol.adapter.AdaptadorGanados;
+import com.andes.vaccontrol.adapter.AdaptadorGanado;
 import com.andes.vaccontrol.configuration.AppServices;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -171,7 +169,7 @@ public class EstabloRetiradosActivity extends AppCompatActivity {
                                         lista_de_ganados.add(ar);
                                     }
 
-                                    ganados_lista.setAdapter(new AdaptadorGanados(EstabloRetiradosActivity.this, "Ganado", lista_de_ganados));
+                                    ganados_lista.setAdapter(new AdaptadorGanado(EstabloRetiradosActivity.this, "Ganado", lista_de_ganados));
 
                                 }
                             }

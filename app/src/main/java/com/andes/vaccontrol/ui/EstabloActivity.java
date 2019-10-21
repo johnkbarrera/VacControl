@@ -25,7 +25,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.andes.vaccontrol.R;
-import com.andes.vaccontrol.adapter.AdaptadorGanados;
+import com.andes.vaccontrol.adapter.AdaptadorGanado;
 import com.andes.vaccontrol.configuration.AppServices;
 
 import org.json.JSONArray;
@@ -212,7 +212,7 @@ public class EstabloActivity extends AppCompatActivity {
                                         lista_de_ganados.add(ar);
                                     }
 
-                                    ganados_lista.setAdapter(new AdaptadorGanados(EstabloActivity.this, "Ganado", lista_de_ganados));
+                                    ganados_lista.setAdapter(new AdaptadorGanado(EstabloActivity.this, "Ganado", lista_de_ganados));
 
                                 }
                             }

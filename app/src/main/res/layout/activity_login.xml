@@ -25,7 +25,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="0dp"
-                android:src="@mipmap/bs" />
+                android:src="@mipmap/vacbs" />
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/lay2"
@@ -83,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/progressBar_l"
                 android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
                 android:text="Ingresar" />
 
             <RelativeLayout
@@ -99,6 +100,7 @@
                     android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:text="Registrar usuario"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp" />
 
 
@@ -111,6 +113,7 @@
                     android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:text="Olvidé mi contraseña"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp" />
 
             </RelativeLayout>

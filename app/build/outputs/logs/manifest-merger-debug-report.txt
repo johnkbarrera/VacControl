@@ -1,276 +1,276 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:48:9-56:20
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:48:9-56:20
 	android:grantUriPermissions
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:52:13-47
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:52:13-47
 	android:authorities
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:50:13-60
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:50:13-60
 	android:exported
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:49:13-67
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:49:13-67
 manifest
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:mediarouter-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2e241ac158bdb2f4eeb31b88c6aa3e86\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\dcc4ced87d05207892a4966a278a54cd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6d048ebda732d85c2c731be9cd59aae9\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5ae3eed95450d00e3b424030e65831ed\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\9fa65523404ddb4c4d55ce8411a923eb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\f9f2e8175a1dc3b9a9d2c8866abbd3ea\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\4f4f6f91f2eb86094da04a172f137b61\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e7f7700973715722988d93e4b219f5c6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\da8917df497b9ebd5e0891a4e533d4ee\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:palette-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\7fa5d8b281433513e78adde9ee9c3bc4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\cf23fd7e2e8472b87112e7d45ccfd525\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\871b2420f76b7d1d20798f8e4829243b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\dc9744fff8b8e5610b35f7c71b5d9233\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\f0e5633cec639f4a2e47ef43cfb8ba88\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\33c4e784816c0e68d6e7ae82c2d53902\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\ac0a4936c186185dbce973430f02493a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e66c5df4cfdafcdb941ab08222cc8948\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\27f187aed8a90b986b3d6762fb3fcd4b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\b90adf98309be12b4f7c26a0028141f5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\86bacd6662b46f077d7b41cabd3cea89\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\26be0bd6451c0ff8710d58db7d0b7aa4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5bf0fb1be4d6617c4ec5ef3fa0cc1ba0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5220442b3accc22ab06462dfe2ba5191\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\683bad68058e45114e5a34691c616610\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\c46d1918eb411515cef50b3c2b5e2a40\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6b7d66108b7abcf551564fa1b336b73d\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\a2666a60180587e747bd2bb7e513ed3d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\7a9a7d0119e00bd0ba370c30f70fb24c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\98b30536bf6d9520796a4a74fc889d2c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\8b38f401f46bfae325e8d57f37c8f952\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e32ddd98e2d62aca1537f91175b467a1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\bda18e639227f59f7791e2933c8c46d2\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\11a8e051af25d9458ed9385b54fa9a04\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6b716bf120cbc7cc3f574a34b589b594\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\c66c8c898197d5019bb5f40557f9c691\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1f61e88a0c9072f3dc1975de2a047929\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:mediarouter-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1d9d2da6b50add40b9b90eec36f13b7c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0dec9e20e33f54b57b49af88a7d3427f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\78c90f454acc57b5981e45267ab876c8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9ae2249a06e91130fb3c152e65033806\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e05d9547d353f6fe9d38749b2a303eda\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\99c9c1c468161f7a914ae8af333b148d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ec1fecab0ed999f4753c27668993a4e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7d4c329582cf4ceca50863aa66d74ad9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cf8f92ab61c0d73b08d58b2c6ed9b63a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:palette-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\08419fab4f121cefcbf3e02c7b459acc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2b20dff3add1ee3d8c607e4a12f44d1b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e90ac4a12b51abbff0c71f7ae514e7ed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7cfcb8bd99fce3dffdf7696866f3b67a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9d96d523985f3bdbae3caf187bd3488f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e44b880cf194c7289a6928cbbd7fd38a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\330150553eefa656dcbd2a8a11bed71d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0f0228af18ac06fda38ebf028cd01744\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8708c8a721373dcace6dab144c2839c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9a0354390c40bd2f0b06a9ce4a6525af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2b043c66475123a2853ab93701575709\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2030430420a4ab5d34e9a021f4f2b534\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e10abf99b27bc822657b219ab7b022da\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3daf82234b40e8f1a103ccb9468abc5e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8deb9f17efe5cd47a412a5dd71911067\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1016cb450685c01aefeb8fca5bc9ccd6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a53b2c201504c141f2e02066bcf24f3b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8a1bc3fc4224c882fe8fffccd0facc18\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e314391bdf0370851805e604eaeeb8c3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7ef8b8035e126175e1dd7c3374b351c5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f21e63dd2039fb338e3f705e956ce71c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\52b5f8994da0ad6fde3b55e837860f4c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d339ef4c52420da4b7f4c6132d39c997\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d1e8226fbdf3fbf5b51f2b5420c932e3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e5a4c1fdd3dce9ab78c90a77517a4ab7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a54bc0323a4f2324f794d5a2ba8ae6f9\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
 	package
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:3:5-35
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:5:5-65
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:5:5-65
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:5:22-62
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:5:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:6:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:7:22-77
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_INTERNAL_STORAGE
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.READ_INTERNAL_STORAGE
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:9:22-77
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:10:5-66
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:10:5-66
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:10:22-64
 uses-feature#android.hardware.camera
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:13:5-14:35
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:13:5-14:35
 	android:required
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:14:9-32
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:14:9-32
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:13:19-57
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:13:19-57
 application
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:17:5-59:19
-MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6d048ebda732d85c2c731be9cd59aae9\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6d048ebda732d85c2c731be9cd59aae9\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5ae3eed95450d00e3b424030e65831ed\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5ae3eed95450d00e3b424030e65831ed\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5220442b3accc22ab06462dfe2ba5191\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5220442b3accc22ab06462dfe2ba5191\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\683bad68058e45114e5a34691c616610\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\683bad68058e45114e5a34691c616610\AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:17:5-59:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1f61e88a0c9072f3dc1975de2a047929\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1f61e88a0c9072f3dc1975de2a047929\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\78c90f454acc57b5981e45267ab876c8\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\78c90f454acc57b5981e45267ab876c8\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9ae2249a06e91130fb3c152e65033806\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9ae2249a06e91130fb3c152e65033806\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3daf82234b40e8f1a103ccb9468abc5e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3daf82234b40e8f1a103ccb9468abc5e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8deb9f17efe5cd47a412a5dd71911067\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8deb9f17efe5cd47a412a5dd71911067\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5220442b3accc22ab06462dfe2ba5191\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3daf82234b40e8f1a103ccb9468abc5e\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:20:9-41
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:20:9-41
 	android:roundIcon
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:21:9-54
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:21:9-54
 	android:icon
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:19:9-44
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:19:9-44
 	android:allowBackup
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:23:9-40
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:23:9-40
 activity#com.andes.vaccontrol.ui.HomeActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:25:9-34:20
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:25:9-34:20
 	android:label
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:27:13-45
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:27:13-45
 	android:theme
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:28:13-56
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:26:13-44
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:26:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:27-74
 activity#com.andes.vaccontrol.ui.CrearEstabloActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:9-61
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:9-61
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:19-58
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:19-58
 activity#com.andes.vaccontrol.ui.EstabloActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:9-56
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:9-56
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:19-53
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:19-53
 activity#com.andes.vaccontrol.ui.EstabloRetiradosActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:9-65
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:9-65
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:19-62
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:19-62
 activity#com.andes.vaccontrol.ui.CrearGanadoActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:9-60
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:9-60
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:19-57
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:19-57
 activity#com.andes.vaccontrol.ui.GanadoActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:9-55
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:9-55
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:19-52
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:19-52
 activity#com.andes.vaccontrol.ui.GanadoRetiradoActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:9-63
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:9-63
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:19-60
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:19-60
 activity#com.andes.vaccontrol.ui.RegistrarFotosActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:9-63
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:9-63
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:19-60
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:19-60
 activity#com.andes.vaccontrol.ui.RegistrarFotosHdActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:9-65
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:9-65
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:19-62
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:19-62
 activity#com.andes.vaccontrol.ui.LoginActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:9-54
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:9-54
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:19-51
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:19-51
 activity#com.andes.vaccontrol.ui.RegisterActivity
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:9-57
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:9-57
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:19-54
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:19-54
 uses-sdk
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2b90679471d462b8a096ce9bfb06eef2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:mediarouter-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2e241ac158bdb2f4eeb31b88c6aa3e86\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:mediarouter-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\2e241ac158bdb2f4eeb31b88c6aa3e86\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\dcc4ced87d05207892a4966a278a54cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\dcc4ced87d05207892a4966a278a54cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6d048ebda732d85c2c731be9cd59aae9\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6d048ebda732d85c2c731be9cd59aae9\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5ae3eed95450d00e3b424030e65831ed\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5ae3eed95450d00e3b424030e65831ed\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\9fa65523404ddb4c4d55ce8411a923eb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\9fa65523404ddb4c4d55ce8411a923eb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\f9f2e8175a1dc3b9a9d2c8866abbd3ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\f9f2e8175a1dc3b9a9d2c8866abbd3ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\4f4f6f91f2eb86094da04a172f137b61\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\4f4f6f91f2eb86094da04a172f137b61\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e7f7700973715722988d93e4b219f5c6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e7f7700973715722988d93e4b219f5c6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\da8917df497b9ebd5e0891a4e533d4ee\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\da8917df497b9ebd5e0891a4e533d4ee\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:palette-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\7fa5d8b281433513e78adde9ee9c3bc4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:palette-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\7fa5d8b281433513e78adde9ee9c3bc4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\cf23fd7e2e8472b87112e7d45ccfd525\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\cf23fd7e2e8472b87112e7d45ccfd525\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\871b2420f76b7d1d20798f8e4829243b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\871b2420f76b7d1d20798f8e4829243b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\dc9744fff8b8e5610b35f7c71b5d9233\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\dc9744fff8b8e5610b35f7c71b5d9233\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\f0e5633cec639f4a2e47ef43cfb8ba88\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\f0e5633cec639f4a2e47ef43cfb8ba88\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\33c4e784816c0e68d6e7ae82c2d53902\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\33c4e784816c0e68d6e7ae82c2d53902\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\ac0a4936c186185dbce973430f02493a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\ac0a4936c186185dbce973430f02493a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e66c5df4cfdafcdb941ab08222cc8948\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e66c5df4cfdafcdb941ab08222cc8948\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\27f187aed8a90b986b3d6762fb3fcd4b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\27f187aed8a90b986b3d6762fb3fcd4b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\b90adf98309be12b4f7c26a0028141f5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\b90adf98309be12b4f7c26a0028141f5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\86bacd6662b46f077d7b41cabd3cea89\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\86bacd6662b46f077d7b41cabd3cea89\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\26be0bd6451c0ff8710d58db7d0b7aa4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\26be0bd6451c0ff8710d58db7d0b7aa4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5bf0fb1be4d6617c4ec5ef3fa0cc1ba0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5bf0fb1be4d6617c4ec5ef3fa0cc1ba0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5220442b3accc22ab06462dfe2ba5191\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\5220442b3accc22ab06462dfe2ba5191\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\683bad68058e45114e5a34691c616610\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\683bad68058e45114e5a34691c616610\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\c46d1918eb411515cef50b3c2b5e2a40\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\c46d1918eb411515cef50b3c2b5e2a40\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6b7d66108b7abcf551564fa1b336b73d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6b7d66108b7abcf551564fa1b336b73d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\a2666a60180587e747bd2bb7e513ed3d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\a2666a60180587e747bd2bb7e513ed3d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\7a9a7d0119e00bd0ba370c30f70fb24c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\7a9a7d0119e00bd0ba370c30f70fb24c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\98b30536bf6d9520796a4a74fc889d2c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\98b30536bf6d9520796a4a74fc889d2c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\8b38f401f46bfae325e8d57f37c8f952\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\8b38f401f46bfae325e8d57f37c8f952\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e32ddd98e2d62aca1537f91175b467a1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\e32ddd98e2d62aca1537f91175b467a1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\bda18e639227f59f7791e2933c8c46d2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\bda18e639227f59f7791e2933c8c46d2\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\11a8e051af25d9458ed9385b54fa9a04\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\11a8e051af25d9458ed9385b54fa9a04\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6b716bf120cbc7cc3f574a34b589b594\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\6b716bf120cbc7cc3f574a34b589b594\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\c66c8c898197d5019bb5f40557f9c691\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jk.barrerac\.gradle\caches\transforms-2\files-2.1\c66c8c898197d5019bb5f40557f9c691\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1f61e88a0c9072f3dc1975de2a047929\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1f61e88a0c9072f3dc1975de2a047929\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:mediarouter-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1d9d2da6b50add40b9b90eec36f13b7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:mediarouter-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1d9d2da6b50add40b9b90eec36f13b7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0dec9e20e33f54b57b49af88a7d3427f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0dec9e20e33f54b57b49af88a7d3427f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\78c90f454acc57b5981e45267ab876c8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\78c90f454acc57b5981e45267ab876c8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9ae2249a06e91130fb3c152e65033806\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9ae2249a06e91130fb3c152e65033806\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e05d9547d353f6fe9d38749b2a303eda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e05d9547d353f6fe9d38749b2a303eda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\99c9c1c468161f7a914ae8af333b148d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\99c9c1c468161f7a914ae8af333b148d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ec1fecab0ed999f4753c27668993a4e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ec1fecab0ed999f4753c27668993a4e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7d4c329582cf4ceca50863aa66d74ad9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7d4c329582cf4ceca50863aa66d74ad9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cf8f92ab61c0d73b08d58b2c6ed9b63a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cf8f92ab61c0d73b08d58b2c6ed9b63a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\08419fab4f121cefcbf3e02c7b459acc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\08419fab4f121cefcbf3e02c7b459acc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2b20dff3add1ee3d8c607e4a12f44d1b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2b20dff3add1ee3d8c607e4a12f44d1b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e90ac4a12b51abbff0c71f7ae514e7ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e90ac4a12b51abbff0c71f7ae514e7ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7cfcb8bd99fce3dffdf7696866f3b67a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7cfcb8bd99fce3dffdf7696866f3b67a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9d96d523985f3bdbae3caf187bd3488f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9d96d523985f3bdbae3caf187bd3488f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e44b880cf194c7289a6928cbbd7fd38a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e44b880cf194c7289a6928cbbd7fd38a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\330150553eefa656dcbd2a8a11bed71d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\330150553eefa656dcbd2a8a11bed71d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0f0228af18ac06fda38ebf028cd01744\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0f0228af18ac06fda38ebf028cd01744\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8708c8a721373dcace6dab144c2839c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8708c8a721373dcace6dab144c2839c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9a0354390c40bd2f0b06a9ce4a6525af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9a0354390c40bd2f0b06a9ce4a6525af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2b043c66475123a2853ab93701575709\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2b043c66475123a2853ab93701575709\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2030430420a4ab5d34e9a021f4f2b534\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2030430420a4ab5d34e9a021f4f2b534\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e10abf99b27bc822657b219ab7b022da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e10abf99b27bc822657b219ab7b022da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3daf82234b40e8f1a103ccb9468abc5e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\3daf82234b40e8f1a103ccb9468abc5e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8deb9f17efe5cd47a412a5dd71911067\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8deb9f17efe5cd47a412a5dd71911067\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1016cb450685c01aefeb8fca5bc9ccd6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\1016cb450685c01aefeb8fca5bc9ccd6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a53b2c201504c141f2e02066bcf24f3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a53b2c201504c141f2e02066bcf24f3b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8a1bc3fc4224c882fe8fffccd0facc18\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\8a1bc3fc4224c882fe8fffccd0facc18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e314391bdf0370851805e604eaeeb8c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e314391bdf0370851805e604eaeeb8c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7ef8b8035e126175e1dd7c3374b351c5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\7ef8b8035e126175e1dd7c3374b351c5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f21e63dd2039fb338e3f705e956ce71c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f21e63dd2039fb338e3f705e956ce71c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\52b5f8994da0ad6fde3b55e837860f4c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\52b5f8994da0ad6fde3b55e837860f4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d339ef4c52420da4b7f4c6132d39c997\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d339ef4c52420da4b7f4c6132d39c997\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d1e8226fbdf3fbf5b51f2b5420c932e3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d1e8226fbdf3fbf5b51f2b5420c932e3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e5a4c1fdd3dce9ab78c90a77517a4ab7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e5a4c1fdd3dce9ab78c90a77517a4ab7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a54bc0323a4f2324f794d5a2ba8ae6f9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a54bc0323a4f2324f794d5a2ba8ae6f9\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:53:13-55:57
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:53:13-55:57
 	android:resource
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:55:17-55
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:55:17-55
 	android:name
-		ADDED from C:\Users\jk.barrerac\Desktop\VacControl\app\src\main\AndroidManifest.xml:54:17-67
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:54:17-67

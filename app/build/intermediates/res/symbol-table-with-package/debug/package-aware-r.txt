@@ -588,6 +588,7 @@ bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
+color abc
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1868,8 +1869,11 @@ mipmap icono_app
 mipmap icono_imagen
 mipmap kilo
 mipmap litros
+mipmap login_bs
 mipmap user
 mipmap vaca
+mipmap vacbs
+mipmap vaquita
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

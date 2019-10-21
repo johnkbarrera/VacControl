@@ -3,10 +3,14 @@ package com.andes.vaccontrol.configuration;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import static com.andes.vaccontrol.configuration.AppServices.URL_PROYECTO;
+
 
 public class AppConfig {
 
-    public static String BASE_URL = "http://165.22.210.70/vacbservices/";
+
+    //public static String BASE_URL = "http://165.22.210.70/vacbservices/";
+    public static String BASE_URL = URL_PROYECTO;
 
     public static Retrofit getRetrofit() {
 

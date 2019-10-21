@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jk.barrerac\\Desktop\\VacControl\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\USER\\Desktop\\VacControl\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\dcc4ced87d05207892a4966a278a54cd\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\0dec9e20e33f54b57b49af88a7d3427f\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jk.barrerac\\.gradle\\caches\\transforms-2\\files-2.1\\6b7d66108b7abcf551564fa1b336b73d\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\a53b2c201504c141f2e02066bcf24f3b\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
