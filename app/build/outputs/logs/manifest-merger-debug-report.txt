@@ -55,7 +55,7 @@ INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:
 INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
 INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:2:1-61:12
 	package
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:3:5-35
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -124,14 +124,14 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\USER\.grad
 		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
 		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:23:9-40
-activity#com.andes.vaccontrol.ui.HomeActivity
+activity#com.andes.vacbscontrol.ui.HomeActivity
 ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:25:9-34:20
 	android:label
 		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:27:13-45
 	android:theme
 		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:26:13-44
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:26:13-66
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
@@ -142,46 +142,46 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
 		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:32:27-74
-activity#com.andes.vaccontrol.ui.CrearEstabloActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:9-61
+activity#com.andes.vacbscontrol.ui.CrearEstabloActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:9-83
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:19-58
-activity#com.andes.vaccontrol.ui.EstabloActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:9-56
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:35:19-80
+activity#com.andes.vacbscontrol.ui.EstabloActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:9-78
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:19-53
-activity#com.andes.vaccontrol.ui.EstabloRetiradosActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:9-65
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:36:19-75
+activity#com.andes.vacbscontrol.ui.EstabloRetiradosActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:9-87
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:19-62
-activity#com.andes.vaccontrol.ui.CrearGanadoActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:9-60
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:37:19-84
+activity#com.andes.vacbscontrol.ui.CrearGanadoActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:9-82
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:19-57
-activity#com.andes.vaccontrol.ui.GanadoActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:9-55
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:38:19-79
+activity#com.andes.vacbscontrol.ui.GanadoActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:9-77
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:19-52
-activity#com.andes.vaccontrol.ui.GanadoRetiradoActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:9-63
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:39:19-74
+activity#com.andes.vacbscontrol.ui.GanadoRetiradoActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:9-85
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:19-60
-activity#com.andes.vaccontrol.ui.RegistrarFotosActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:9-63
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:40:19-82
+activity#com.andes.vacbscontrol.ui.RegistrarFotosActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:9-85
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:19-60
-activity#com.andes.vaccontrol.ui.RegistrarFotosHdActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:9-65
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:41:19-82
+activity#com.andes.vacbscontrol.ui.RegistrarFotosHdActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:9-87
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:19-62
-activity#com.andes.vaccontrol.ui.LoginActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:9-54
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:42:19-84
+activity#com.andes.vacbscontrol.ui.LoginActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:9-76
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:19-51
-activity#com.andes.vaccontrol.ui.RegisterActivity
-ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:9-57
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:44:19-73
+activity#com.andes.vacbscontrol.ui.RegisterActivity
+ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:9-79
 	android:name
-		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:19-54
+		ADDED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml:45:19-76
 uses-sdk
 INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\USER\Desktop\VacControl\app\src\main\AndroidManifest.xml

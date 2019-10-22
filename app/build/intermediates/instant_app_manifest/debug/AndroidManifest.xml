@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.andes.vaccontrol"
+    package="com.andes.vacbscontrol"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -28,10 +28,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" > <!-- ELIMINAR ESTA FILA -->
 
         <activity
-            android:name="com.andes.vaccontrol.ui.HomeActivity"
+            android:name="com.andes.vacbscontrol.ui.HomeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
@@ -40,20 +41,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.andes.vaccontrol.ui.CrearEstabloActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.EstabloActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.EstabloRetiradosActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.CrearGanadoActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.GanadoActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.GanadoRetiradoActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.RegistrarFotosActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.RegistrarFotosHdActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.LoginActivity" />
-        <activity android:name="com.andes.vaccontrol.ui.RegisterActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.CrearEstabloActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.EstabloActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.EstabloRetiradosActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.CrearGanadoActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.GanadoActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.GanadoRetiradoActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.RegistrarFotosActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.RegistrarFotosHdActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.LoginActivity" />
+        <activity android:name="com.andes.vacbscontrol.ui.RegisterActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.andes.vaccontrol.provider"
+            android:authorities="com.andes.vacbscontrol.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
