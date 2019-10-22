@@ -1,14 +1,13 @@
-package com.andes.vaccontrol.adapter;
+package com.andes.vacbscontrol.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.andes.vaccontrol.R;
+import com.andes.vacbscontrol.R;
 
 import java.util.ArrayList;
 

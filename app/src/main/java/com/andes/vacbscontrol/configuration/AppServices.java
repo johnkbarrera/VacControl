@@ -1,4 +1,4 @@
-package com.andes.vaccontrol.configuration;
+package com.andes.vacbscontrol.configuration;
 
 public interface AppServices {
 

@@ -1,9 +1,9 @@
-package com.andes.vaccontrol.configuration;
+package com.andes.vacbscontrol.configuration;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.andes.vaccontrol.configuration.AppServices.URL_PROYECTO;
+import static com.andes.vacbscontrol.configuration.AppServices.URL_PROYECTO;
 
 
 public class AppConfig {
